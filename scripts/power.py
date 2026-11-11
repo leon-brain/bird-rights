@@ -138,6 +138,7 @@ def compute_power(matchups: dict, categories: list, teams: list) -> dict:
                 "result": round(result, 1),
                 "week": round(week, 1),
                 "expected": f"{e[0]:.1f}-{e[1]:.1f}-{e[2]:.1f}",
+                "expected_pct": round(100 * (e[0] + e[2] / 2) / max(sum(e), 1e-9), 1),
                 "actual": f"{a[0]}-{a[1]}-{a[2]}",
                 "luck": round((a[0] + a[2] / 2) - (e[0] + e[2] / 2), 1),
                 "cat_ranks": [{"key": k, "rank": cat_ranks[k].get(tid)} for k in cat_keys],

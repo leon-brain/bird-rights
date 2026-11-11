@@ -31,34 +31,34 @@
       <p class="period-meta"><span>{% if e.end %}на {{ e.end|ru_date(true) }}, {% endif %}учтено {{ e.matchups_counted }} {{ plural(e.matchups_counted, 'матчап', 'матчапа', 'матчапов') }}</span></p>
     </header>
     <div class="table-scroll" tabindex="0" role="region" aria-label="Рейтинг силы, прокручивается по горизонтали">
-      <table class="standings power">
+      <table class="standings power" data-sortable>
         <thead>
           <tr>
-            <th class="col-rank sticky-1" scope="col"><abbr title="Место в рейтинге">№</abbr></th>
-            <th class="col-team sticky-2" scope="col">Команда</th>
-            <th class="num" scope="col">Рейтинг</th>
-            <th class="num" scope="col"><abbr title="Изменение места за неделю">±</abbr></th>
-            <th class="num" scope="col"><abbr title="Сила за последние {{ power.form_window }} матчапа">Форма</abbr></th>
-            <th class="num" scope="col"><abbr title="Средняя сила за сезон">Сезон</abbr></th>
-            <th class="num" scope="col"><abbr title="Реальный счёт по категориям">Счёт</abbr></th>
-            <th class="num" scope="col"><abbr title="Ожидаемый счёт при игре с каждой командой">Ожидалось</abbr></th>
-            <th class="num" scope="col"><abbr title="Реальные победы минус ожидаемые">Везение</abbr></th>
-            {% for c in power.categories %}<th class="num cat-col" scope="col">{{ c }}</th>{% endfor %}
+            <th class="col-rank sticky-1" scope="col" data-dir="asc"><button class="sort" type="button"><abbr title="Место в рейтинге">№</abbr></button></th>
+            <th class="col-team sticky-2" scope="col" data-dir="asc"><button class="sort" type="button">Команда</button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button">Рейтинг</button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button"><abbr title="Изменение места за неделю">±</abbr></button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button"><abbr title="Сила за последние {{ power.form_window }} матчапа">Форма</abbr></button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button"><abbr title="Средняя сила за сезон">Сезон</abbr></button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button"><abbr title="Реальный счёт по категориям">Счёт</abbr></button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button"><abbr title="Ожидаемый счёт при игре с каждой командой">Ожидалось</abbr></button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button"><abbr title="Реальные победы минус ожидаемые">Везение</abbr></button></th>
+            {% for c in power.categories %}<th class="num cat-col" scope="col" data-dir="asc"><button class="sort" type="button">{{ c }}</button></th>{% endfor %}
           </tr>
         </thead>
         <tbody>
           {% for r in e.rows %}
-          <tr class="in-zone">
-            <td class="col-rank sticky-1"><span class="rank">{{ r.rank }}</span></td>
-            <th class="col-team sticky-2" scope="row"><span class="team-name">{{ r.name }}</span></th>
-            <td class="num"><span class="rating">{{ '%.1f'|format(r.rating) }}</span><span class="rating-bar" aria-hidden="true"><i style="width: {{ r.rating }}%"></i></span></td>
-            <td class="num">{{ move(r) }}</td>
-            <td class="num">{{ '%.1f'|format(r.form) }}</td>
-            <td class="num">{{ '%.1f'|format(r.season) }}</td>
-            <td class="num">{{ r.actual }}</td>
-            <td class="num">{{ r.expected }}</td>
-            <td class="num"><span class="luck{% if r.luck >= 1.5 %} luck-plus{% elif r.luck <= -1.5 %} luck-minus{% endif %}">{{ '0.0' if r.luck == 0 else '%+.1f'|format(r.luck)|replace('-', '−') }}</span></td>
-            {% for c in r.cat_ranks %}<td class="num cat-col"><span class="cat-rank{% if c.rank and c.rank <= 3 %} is-top{% elif c.rank and c.rank > e.rows|length - 3 %} is-low{% endif %}">{{ c.rank or '—' }}</span></td>{% endfor %}
+          <tr class="in-zone" data-rank="{{ loop.index }}">
+            <td class="col-rank sticky-1" data-v="{{ r.rank }}"><span class="rank">{{ r.rank }}</span></td>
+            <th class="col-team sticky-2" scope="row" data-t="{{ r.name }}"><span class="team-name">{{ r.name }}</span></th>
+            <td class="num" data-v="{{ r.rating }}"><span class="rating">{{ '%.1f'|format(r.rating) }}</span><span class="rating-bar" aria-hidden="true"><i style="width: {{ r.rating }}%"></i></span></td>
+            <td class="num" data-v="{{ r.move if r.move is not none else 0 }}">{{ move(r) }}</td>
+            <td class="num" data-v="{{ r.form }}">{{ '%.1f'|format(r.form) }}</td>
+            <td class="num" data-v="{{ r.season }}">{{ '%.1f'|format(r.season) }}</td>
+            <td class="num" data-v="{{ r.result }}">{{ r.actual }}</td>
+            <td class="num" data-v="{{ r.expected_pct }}">{{ r.expected }}</td>
+            <td class="num" data-v="{{ r.luck }}"><span class="luck{% if r.luck >= 1.5 %} luck-plus{% elif r.luck <= -1.5 %} luck-minus{% endif %}">{{ '0.0' if r.luck == 0 else '%+.1f'|format(r.luck)|replace('-', '−') }}</span></td>
+            {% for c in r.cat_ranks %}<td class="num cat-col" data-v="{{ c.rank or 99 }}"><span class="cat-rank{% if c.rank and c.rank <= 3 %} is-top{% elif c.rank and c.rank > e.rows|length - 3 %} is-low{% endif %}">{{ c.rank or '—' }}</span></td>{% endfor %}
           </tr>
           {% endfor %}
         </tbody>
@@ -68,6 +68,7 @@
   {% endfor %}
 
   <ul class="legend">
+    <li><span>Нажмите на заголовок столбца, чтобы отсортировать таблицу; повторное нажатие меняет порядок</span></li>
     <li><span><b>Рейтинг</b> — от 0 до 100: {{ power.weights.form }}% форма, {{ power.weights.season }}% сезон, {{ power.weights.result }}% реальный процент побед</span></li>
     <li><span class="cat-rank is-top">1</span> <span>место команды в лиге по категории за сезон; золотом — тройка лучших</span></li>
   </ul>

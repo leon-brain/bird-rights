@@ -40,6 +40,7 @@
           "result": 66.7,
           "week": 63.6,
           "expected": "5.6-3.2-0.2",
+          "expected_pct": 63.6,
           "actual": "6-3-0",
           "luck": 0.3,
           "cat_ranks": [
@@ -95,6 +96,7 @@
           "result": 66.7,
           "week": 62.1,
           "expected": "5.5-3.4-0.1",
+          "expected_pct": 62.1,
           "actual": "6-3-0",
           "luck": 0.4,
           "cat_ranks": [
@@ -150,6 +152,7 @@
           "result": 77.8,
           "week": 53.5,
           "expected": "4.8-4.2-0.0",
+          "expected_pct": 53.5,
           "actual": "7-2-0",
           "luck": 2.2,
           "cat_ranks": [
@@ -205,6 +208,7 @@
           "result": 44.4,
           "week": 57.1,
           "expected": "4.9-3.6-0.5",
+          "expected_pct": 57.1,
           "actual": "4-5-0",
           "luck": -1.1,
           "cat_ranks": [
@@ -260,6 +264,7 @@
           "result": 55.6,
           "week": 49.0,
           "expected": "4.4-4.5-0.1",
+          "expected_pct": 49.0,
           "actual": "5-4-0",
           "luck": 0.6,
           "cat_ranks": [
@@ -315,6 +320,7 @@
           "result": 44.4,
           "week": 50.0,
           "expected": "4.4-4.4-0.3",
+          "expected_pct": 50.0,
           "actual": "4-5-0",
           "luck": -0.5,
           "cat_ranks": [
@@ -370,6 +376,7 @@
           "result": 33.3,
           "week": 51.5,
           "expected": "4.5-4.2-0.4",
+          "expected_pct": 51.5,
           "actual": "3-6-0",
           "luck": -1.6,
           "cat_ranks": [
@@ -425,6 +432,7 @@
           "result": 33.3,
           "week": 48.5,
           "expected": "4.4-4.6-0.0",
+          "expected_pct": 48.5,
           "actual": "3-6-0",
           "luck": -1.4,
           "cat_ranks": [
@@ -480,6 +488,7 @@
           "result": 55.6,
           "week": 44.4,
           "expected": "4.0-5.0-0.0",
+          "expected_pct": 44.4,
           "actual": "5-4-0",
           "luck": 1.0,
           "cat_ranks": [
@@ -535,6 +544,7 @@
           "result": 50.0,
           "week": 43.4,
           "expected": "3.7-4.9-0.4",
+          "expected_pct": 43.4,
           "actual": "4-4-1",
           "luck": 0.6,
           "cat_ranks": [
@@ -590,6 +600,7 @@
           "result": 50.0,
           "week": 39.4,
           "expected": "3.4-5.3-0.4",
+          "expected_pct": 39.4,
           "actual": "4-4-1",
           "luck": 1.0,
           "cat_ranks": [
@@ -645,6 +656,7 @@
           "result": 22.2,
           "week": 37.4,
           "expected": "3.4-5.6-0.0",
+          "expected_pct": 37.4,
           "actual": "2-7-0",
           "luck": -1.4,
           "cat_ranks": [
@@ -710,6 +722,7 @@
           "result": 72.2,
           "week": 71.7,
           "expected": "11.2-6.6-0.2",
+          "expected_pct": 62.6,
           "actual": "13-5-0",
           "luck": 1.7,
           "cat_ranks": [
@@ -765,6 +778,7 @@
           "result": 72.2,
           "week": 64.1,
           "expected": "11.2-6.5-0.4",
+          "expected_pct": 63.1,
           "actual": "13-5-0",
           "luck": 1.6,
           "cat_ranks": [
@@ -820,6 +834,7 @@
           "result": 55.6,
           "week": 54.0,
           "expected": "10.5-7.3-0.3",
+          "expected_pct": 58.8,
           "actual": "10-8-0",
           "luck": -0.6,
           "cat_ranks": [
@@ -875,6 +890,7 @@
           "result": 66.7,
           "week": 59.6,
           "expected": "9.7-8.2-0.1",
+          "expected_pct": 54.3,
           "actual": "12-6-0",
           "luck": 2.2,
           "cat_ranks": [
@@ -930,6 +946,7 @@
           "result": 55.6,
           "week": 66.2,
           "expected": "9.9-8.0-0.1",
+          "expected_pct": 55.3,
           "actual": "10-8-0",
           "luck": 0.0,
           "cat_ranks": [
@@ -985,6 +1002,7 @@
           "result": 33.3,
           "week": 46.5,
           "expected": "9.0-8.4-0.6",
+          "expected_pct": 51.8,
           "actual": "6-12-0",
           "luck": -3.3,
           "cat_ranks": [
@@ -1040,6 +1058,7 @@
           "result": 27.8,
           "week": 43.9,
           "expected": "8.3-9.1-0.6",
+          "expected_pct": 47.7,
           "actual": "5-13-0",
           "luck": -3.6,
           "cat_ranks": [
@@ -1095,6 +1114,7 @@
           "result": 44.4,
           "week": 39.9,
           "expected": "7.8-9.6-0.5",
+          "expected_pct": 44.9,
           "actual": "8-10-0",
           "luck": -0.1,
           "cat_ranks": [
@@ -1150,6 +1170,7 @@
           "result": 52.8,
           "week": 41.4,
           "expected": "7.0-10.5-0.5",
+          "expected_pct": 40.4,
           "actual": "9-8-1",
           "luck": 2.2,
           "cat_ranks": [
@@ -1205,6 +1226,7 @@
           "result": 33.3,
           "week": 40.4,
           "expected": "7.9-9.9-0.2",
+          "expected_pct": 44.4,
           "actual": "6-12-0",
           "luck": -2.0,
           "cat_ranks": [
@@ -1260,6 +1282,7 @@
           "result": 58.3,
           "week": 35.9,
           "expected": "6.8-10.5-0.6",
+          "expected_pct": 39.6,
           "actual": "10-7-1",
           "luck": 3.4,
           "cat_ranks": [
@@ -1315,6 +1338,7 @@
           "result": 27.8,
           "week": 36.4,
           "expected": "6.5-11.2-0.4",
+          "expected_pct": 36.9,
           "actual": "5-13-0",
           "luck": -1.6,
           "cat_ranks": [
@@ -1380,6 +1404,7 @@
           "result": 66.7,
           "week": 64.6,
           "expected": "16.9-9.7-0.4",
+          "expected_pct": 63.3,
           "actual": "18-9-0",
           "luck": 0.9,
           "cat_ranks": [
@@ -1435,6 +1460,7 @@
           "result": 63.0,
           "week": 52.5,
           "expected": "15.9-10.7-0.4",
+          "expected_pct": 59.6,
           "actual": "17-10-0",
           "luck": 0.9,
           "cat_ranks": [
@@ -1490,6 +1516,7 @@
           "result": 63.0,
           "week": 54.0,
           "expected": "14.5-12.2-0.4",
+          "expected_pct": 54.2,
           "actual": "17-10-0",
           "luck": 2.4,
           "cat_ranks": [
@@ -1545,6 +1572,7 @@
           "result": 55.6,
           "week": 53.0,
           "expected": "15.0-11.3-0.7",
+          "expected_pct": 56.9,
           "actual": "15-12-0",
           "luck": -0.4,
           "cat_ranks": [
@@ -1600,6 +1628,7 @@
           "result": 51.9,
           "week": 62.1,
           "expected": "14.5-11.7-0.7",
+          "expected_pct": 55.2,
           "actual": "14-13-0",
           "luck": -0.9,
           "cat_ranks": [
@@ -1655,6 +1684,7 @@
           "result": 55.6,
           "week": 66.7,
           "expected": "13.8-12.6-0.5",
+          "expected_pct": 52.2,
           "actual": "15-12-0",
           "luck": 0.9,
           "cat_ranks": [
@@ -1710,6 +1740,7 @@
           "result": 51.9,
           "week": 44.4,
           "expected": "13.7-12.8-0.5",
+          "expected_pct": 51.7,
           "actual": "14-13-0",
           "luck": 0.0,
           "cat_ranks": [
@@ -1765,6 +1796,7 @@
           "result": 53.7,
           "week": 43.4,
           "expected": "10.7-15.6-0.6",
+          "expected_pct": 40.9,
           "actual": "14-12-1",
           "luck": 3.5,
           "cat_ranks": [
@@ -1820,6 +1852,7 @@
           "result": 50.0,
           "week": 41.4,
           "expected": "10.6-15.6-0.7",
+          "expected_pct": 40.7,
           "actual": "13-13-1",
           "luck": 2.5,
           "cat_ranks": [
@@ -1875,6 +1908,7 @@
           "result": 25.9,
           "week": 48.5,
           "expected": "10.7-15.7-0.5",
+          "expected_pct": 40.7,
           "actual": "7-20-0",
           "luck": -4.0,
           "cat_ranks": [
@@ -1930,6 +1964,7 @@
           "result": 22.2,
           "week": 36.9,
           "expected": "11.5-14.6-0.9",
+          "expected_pct": 44.1,
           "actual": "6-21-0",
           "luck": -5.9,
           "cat_ranks": [
@@ -1985,6 +2020,7 @@
           "result": 40.7,
           "week": 32.3,
           "expected": "10.6-15.8-0.5",
+          "expected_pct": 40.4,
           "actual": "11-16-0",
           "luck": 0.1,
           "cat_ranks": [

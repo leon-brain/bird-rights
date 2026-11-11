@@ -73,6 +73,37 @@
     if (!show(location.hash.slice(1), false)) show(current(), false);
   }
 
+  // --- сортировка таблиц по столбцам
+  Array.prototype.forEach.call(document.querySelectorAll('table[data-sortable]'), function (table) {
+    var heads = Array.prototype.slice.call(table.tHead.rows[0].cells);
+    var body = table.tBodies[0];
+    var value = function (row, i) {
+      var cell = row.cells[i];
+      if (cell.hasAttribute('data-v')) return parseFloat(cell.getAttribute('data-v'));
+      return (cell.getAttribute('data-t') || cell.textContent).trim().toLowerCase();
+    };
+    heads.forEach(function (th, i) {
+      var btn = th.querySelector('.sort');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var current = th.getAttribute('aria-sort');
+        var dir = current ? (current === 'ascending' ? 'descending' : 'ascending')
+                          : (th.getAttribute('data-dir') === 'asc' ? 'ascending' : 'descending');
+        var sign = dir === 'ascending' ? 1 : -1;
+        var rows = Array.prototype.slice.call(body.rows);
+        rows.sort(function (a, b) {
+          var x = value(a, i), y = value(b, i), d;
+          d = (typeof x === 'number' && typeof y === 'number') ? x - y : String(x).localeCompare(String(y), 'ru');
+          return d ? d * sign : Number(a.getAttribute('data-rank')) - Number(b.getAttribute('data-rank'));
+        });
+        rows.forEach(function (r) { body.appendChild(r); });
+        heads.forEach(function (h) { h.removeAttribute('aria-sort'); });
+        th.setAttribute('aria-sort', dir);
+      });
+    });
+    if (heads[0]) heads[0].setAttribute('aria-sort', 'ascending');
+  });
+
   // --- оглавление устава: на телефоне свёрнуто, после перехода закрывается
   var toc = document.getElementById('toc');
   if (toc && window.matchMedia) {
