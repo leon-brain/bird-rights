@@ -27,6 +27,7 @@ MONTHS = ["января", "февраля", "марта", "апреля", "ма�
 PAGES = [
     ("index.html", "Главная", "home"),
     ("standings.html", "Таблица", "standings"),
+    ("power.html", "Рейтинг", "power"),
     ("matchups.html", "Матчапы", "matchups"),
     ("teams.html", "Команды", "teams"),
     ("rules.html", "Правила", "rules"),
@@ -204,6 +205,7 @@ def build(data_dir: Path, out: Path) -> None:
     matchups = read_json(data_dir / "matchups.json", {"periods": []})
     teams = read_json(data_dir / "teams.json", {"teams": []})
     history = read_json(data_dir / "history.json", {"seasons": []})
+    power = read_json(data_dir / "power.json", {"editions": []})
 
     periods = matchups.get("periods", [])
     current = next((p for p in periods if p["state"] == "current"), None)
@@ -253,6 +255,8 @@ def build(data_dir: Path, out: Path) -> None:
         "default_period": default_period,
         "teams": teams.get("teams", []),
         "seasons": seasons,
+        "power": power,
+        "editions": power.get("editions", []),
         "next_champion_year": season or (seasons[0]["season"] + 1 if seasons else date.today().year + 1),
         "charter": charter,
         "espn_groups": espn_settings_groups(league),

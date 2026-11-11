@@ -17,6 +17,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from power import compute_power  # noqa: E402
+
 DATA = ROOT / "data"
 ET = ZoneInfo("America/New_York")
 
@@ -179,6 +182,8 @@ def cats_payload(game: dict, categories: list) -> list:
             "key": c["key"],
             "home": fmt_stat(c["key"], (h or {}).get("score")),
             "away": fmt_stat(c["key"], (a or {}).get("score")),
+            "home_raw": (h or {}).get("score"),
+            "away_raw": (a or {}).get("score"),
             "winner": winner,
         })
     return out
@@ -435,6 +440,7 @@ def collect(league) -> dict:
         "standings": {"season": season, "playoff_spots": playoff_teams, "has_streak": has_streak, "rows": rows},
         "matchups": {"season": season, "periods": matchup_periods},
         "teams": {"season": season, "teams": team_cards},
+        "power": compute_power({"season": season, "periods": matchup_periods}, categories, team_cards),
         "_final": {
             "finished": finished,
             "ranks": {t["id"]: t["final_rank"] for t in teams.values()},
@@ -479,7 +485,7 @@ def update_history(result: dict) -> bool:
     write_json(path, history)
     archive = DATA / str(season)
     archive.mkdir(parents=True, exist_ok=True)
-    for name in ("league.json", "standings.json", "matchups.json", "teams.json"):
+    for name in ("league.json", "standings.json", "matchups.json", "teams.json", "power.json"):
         if (DATA / name).exists():
             shutil.copy2(DATA / name, archive / name)
     log(f"Сезон {season} завершён: запись добавлена в history.json, данные сохранены в data/{season}/")
@@ -511,7 +517,7 @@ def main() -> int:
         log(f"ESPN не отдал данные сезона {year}: {type(exc).__name__}. Файлы в data/ оставлены без изменений.")
         return 1
 
-    files = {name: result[name] for name in ("league", "standings", "matchups", "teams")}
+    files = {name: result[name] for name in ("league", "standings", "matchups", "teams", "power")}
     old_league = read_json(DATA / "league.json", {})
     old_updated = old_league.pop("updated_at", None)
     changed = [n for n, payload in files.items()

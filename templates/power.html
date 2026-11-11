@@ -1,0 +1,88 @@
+﻿{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% macro move(r) %}
+{%- if r.move is none -%}<span class="move move-new" title="Первый рейтинг сезона">—</span>
+{%- elif r.move > 0 -%}<span class="move move-up" title="Было {{ r.prev_rank }} место">▲{{ r.move }}</span>
+{%- elif r.move < 0 -%}<span class="move move-down" title="Было {{ r.prev_rank }} место">▼{{ -r.move }}</span>
+{%- else -%}<span class="move" title="Место не изменилось">=</span>
+{%- endif -%}
+{% endmacro %}
+{% block content %}
+{{ ui.page_head('Рейтинг силы', 'Кто сильнее на самом деле, если убрать везение с соперниками. Обновляется после каждого матчапа.' if editions else None) }}
+<div class="wrap section">
+  {% if editions %}
+  <nav class="period-nav" aria-label="Выбор недели рейтинга">
+    <button class="period-step" type="button" data-step="-1" aria-label="Предыдущий рейтинг">‹</button>
+    <label class="period-select">
+      <span class="visually-hidden">Рейтинг после матчапа</span>
+      <select id="period-select">
+        {% for e in editions %}
+        <option value="w{{ e.period_id }}"{% if loop.last %} selected{% endif %}>После: {{ e.label }}{% if e.end %} · {{ e.end|ru_date }}{% endif %}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <button class="period-step" type="button" data-step="1" aria-label="Следующий рейтинг">›</button>
+  </nav>
+
+  {% for e in editions %}
+  <section class="period{% if loop.last %} is-active{% endif %}" id="w{{ e.period_id }}" data-period-section aria-labelledby="w{{ e.period_id }}-h">
+    <header class="period-head">
+      <h2 id="w{{ e.period_id }}-h">После: {{ e.label|lower if e.is_playoff else e.label|replace('Матчап', 'матчапа') }}</h2>
+      <p class="period-meta"><span>{% if e.end %}на {{ e.end|ru_date(true) }}, {% endif %}учтено {{ e.matchups_counted }} {{ plural(e.matchups_counted, 'матчап', 'матчапа', 'матчапов') }}</span></p>
+    </header>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Рейтинг силы, прокручивается по горизонтали">
+      <table class="standings power">
+        <thead>
+          <tr>
+            <th class="col-rank sticky-1" scope="col"><abbr title="Место в рейтинге">№</abbr></th>
+            <th class="col-team sticky-2" scope="col">Команда</th>
+            <th class="num" scope="col">Рейтинг</th>
+            <th class="num" scope="col"><abbr title="Изменение места за неделю">±</abbr></th>
+            <th class="num" scope="col"><abbr title="Сила за последние {{ power.form_window }} матчапа">Форма</abbr></th>
+            <th class="num" scope="col"><abbr title="Средняя сила за сезон">Сезон</abbr></th>
+            <th class="num" scope="col"><abbr title="Реальный счёт по категориям">Счёт</abbr></th>
+            <th class="num" scope="col"><abbr title="Ожидаемый счёт при игре с каждой командой">Ожидалось</abbr></th>
+            <th class="num" scope="col"><abbr title="Реальные победы минус ожидаемые">Везение</abbr></th>
+            {% for c in power.categories %}<th class="num cat-col" scope="col">{{ c }}</th>{% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in e.rows %}
+          <tr class="in-zone">
+            <td class="col-rank sticky-1"><span class="rank">{{ r.rank }}</span></td>
+            <th class="col-team sticky-2" scope="row"><span class="team-name">{{ r.name }}</span></th>
+            <td class="num"><span class="rating">{{ '%.1f'|format(r.rating) }}</span><span class="rating-bar" aria-hidden="true"><i style="width: {{ r.rating }}%"></i></span></td>
+            <td class="num">{{ move(r) }}</td>
+            <td class="num">{{ '%.1f'|format(r.form) }}</td>
+            <td class="num">{{ '%.1f'|format(r.season) }}</td>
+            <td class="num">{{ r.actual }}</td>
+            <td class="num">{{ r.expected }}</td>
+            <td class="num"><span class="luck{% if r.luck >= 1.5 %} luck-plus{% elif r.luck <= -1.5 %} luck-minus{% endif %}">{{ '0.0' if r.luck == 0 else '%+.1f'|format(r.luck)|replace('-', '−') }}</span></td>
+            {% for c in r.cat_ranks %}<td class="num cat-col"><span class="cat-rank{% if c.rank and c.rank <= 3 %} is-top{% elif c.rank and c.rank > e.rows|length - 3 %} is-low{% endif %}">{{ c.rank or '—' }}</span></td>{% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {% endfor %}
+
+  <ul class="legend">
+    <li><span><b>Рейтинг</b> — от 0 до 100: {{ power.weights.form }}% форма, {{ power.weights.season }}% сезон, {{ power.weights.result }}% реальный процент побед</span></li>
+    <li><span class="cat-rank is-top">1</span> <span>место команды в лиге по категории за сезон; золотом — тройка лучших</span></li>
+  </ul>
+
+  <section class="howto" aria-labelledby="howto-h">
+    <h2 class="section-h" id="howto-h">Как считается</h2>
+    <ol>
+      <li>За каждый завершённый матчап команда сравнивается не только со своим соперником, а со всеми {{ (editions[-1].rows|length) - 1 }} командами лиги по каждой из {{ power.categories|length }} категорий.</li>
+      <li>Доля выигранных сравнений (ничья — половина) даёт силу за матчап: 100 — обыграла бы всех во всех категориях, 50 — середина лиги.</li>
+      <li><b>Форма</b> — сила за последние {{ power.form_window }} матчапа, свежие весят больше. <b>Сезон</b> — средняя сила за все матчапы.</li>
+      <li><b>Ожидалось</b> — средний счёт, с которым команда сыграла бы против каждого соперника лиги. <b>Везение</b> — на сколько категорий реальный счёт лучше или хуже ожидаемого.</li>
+    </ol>
+  </section>
+  {% else %}
+  {{ ui.empty('Рейтинга пока нет', 'Первый рейтинг появится после первого завершённого матчапа сезона.') }}
+  {% endif %}
+</div>
+{% endblock %}

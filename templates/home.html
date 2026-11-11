@@ -65,6 +65,26 @@
     {% endif %}
   </section>
 
+  {% if editions %}
+  {% set ed = editions[-1] %}
+  <section class="panel home-power" aria-labelledby="h-power">
+    <header class="panel-head">
+      <h2 id="h-power">Рейтинг силы</h2>
+      <p class="panel-meta">После: {{ ed.label|lower if ed.is_playoff else ed.label|replace('Матчап', 'матчапа') }}</p>
+    </header>
+    <ol class="leaders">
+      {% for r in ed.rows[:5] %}
+      <li>
+        <span class="leaders-rank">{{ r.rank }}</span>
+        <span class="leaders-team"><b>{{ r.name }}</b><small>{% if r.move is none %}первый рейтинг{% elif r.move > 0 %}▲ {{ r.move }} за неделю{% elif r.move < 0 %}▼ {{ -r.move }} за неделю{% else %}без изменений{% endif %}</small></span>
+        <span class="leaders-rec">{{ '%.1f'|format(r.rating) }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+    <a class="more" href="power.html">Весь рейтинг</a>
+  </section>
+  {% endif %}
+
   <section class="panel home-last" aria-labelledby="h-last">
     <header class="panel-head">
       <h2 id="h-last">{% if last_done %}Итоги: {{ last_done.label|lower if last_done.is_playoff else last_done.label|replace('Матчап', 'матчап') }}{% else %}Последние результаты{% endif %}</h2>

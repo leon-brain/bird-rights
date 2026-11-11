@@ -15,8 +15,8 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = ["index", "standings", "matchups", "teams", "rules", "history"]
-EXTRA_768 = {"standings", "matchups"}
+PAGES = ["index", "standings", "power", "matchups", "teams", "rules", "history"]
+EXTRA_768 = {"standings", "matchups", "power"}
 
 
 def serve(directory: Path):

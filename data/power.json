@@ -1,0 +1,2032 @@
+{
+  "season": 2027,
+  "weights": {
+    "form": 60,
+    "season": 25,
+    "result": 15
+  },
+  "form_window": 3,
+  "categories": [
+    "FG%",
+    "FT%",
+    "3PM",
+    "PTS",
+    "REB",
+    "AST",
+    "STL",
+    "BLK",
+    "TO"
+  ],
+  "editions": [
+    {
+      "period_id": 1,
+      "label": "Матчап 1",
+      "start": "2026-10-20",
+      "end": "2026-10-25",
+      "is_playoff": false,
+      "matchups_counted": 1,
+      "rows": [
+        {
+          "rank": 1,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 6,
+          "name": "Xz Cho's Exquisite Team",
+          "abbrev": "XET",
+          "manager": "Nikita",
+          "rating": 64.1,
+          "form": 63.6,
+          "season": 63.6,
+          "result": 66.7,
+          "week": 63.6,
+          "expected": "5.6-3.2-0.2",
+          "actual": "6-3-0",
+          "luck": 0.3,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 10
+            },
+            {
+              "key": "FT%",
+              "rank": 8
+            },
+            {
+              "key": "3PM",
+              "rank": 2
+            },
+            {
+              "key": "PTS",
+              "rank": 1
+            },
+            {
+              "key": "REB",
+              "rank": 2
+            },
+            {
+              "key": "AST",
+              "rank": 4
+            },
+            {
+              "key": "STL",
+              "rank": 3
+            },
+            {
+              "key": "BLK",
+              "rank": 3
+            },
+            {
+              "key": "TO",
+              "rank": 11
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 12,
+          "name": "EV’s Supertuskers",
+          "abbrev": "LJ6",
+          "manager": "Egor",
+          "rating": 62.8,
+          "form": 62.1,
+          "season": 62.1,
+          "result": 66.7,
+          "week": 62.1,
+          "expected": "5.5-3.4-0.1",
+          "actual": "6-3-0",
+          "luck": 0.4,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 4
+            },
+            {
+              "key": "FT%",
+              "rank": 3
+            },
+            {
+              "key": "3PM",
+              "rank": 9
+            },
+            {
+              "key": "PTS",
+              "rank": 2
+            },
+            {
+              "key": "REB",
+              "rank": 10
+            },
+            {
+              "key": "AST",
+              "rank": 2
+            },
+            {
+              "key": "STL",
+              "rank": 9
+            },
+            {
+              "key": "BLK",
+              "rank": 4
+            },
+            {
+              "key": "TO",
+              "rank": 3
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 9,
+          "name": "Lyubasik Titan's",
+          "abbrev": "LT",
+          "manager": "Roman",
+          "rating": 57.2,
+          "form": 53.5,
+          "season": 53.5,
+          "result": 77.8,
+          "week": 53.5,
+          "expected": "4.8-4.2-0.0",
+          "actual": "7-2-0",
+          "luck": 2.2,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 12
+            },
+            {
+              "key": "FT%",
+              "rank": 5
+            },
+            {
+              "key": "3PM",
+              "rank": 3
+            },
+            {
+              "key": "PTS",
+              "rank": 3
+            },
+            {
+              "key": "REB",
+              "rank": 6
+            },
+            {
+              "key": "AST",
+              "rank": 1
+            },
+            {
+              "key": "STL",
+              "rank": 6
+            },
+            {
+              "key": "BLK",
+              "rank": 7
+            },
+            {
+              "key": "TO",
+              "rank": 12
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 7,
+          "name": "ZeeBo Grit'n'Grind",
+          "abbrev": "ZBO",
+          "manager": "Max",
+          "rating": 55.2,
+          "form": 57.1,
+          "season": 57.1,
+          "result": 44.4,
+          "week": 57.1,
+          "expected": "4.9-3.6-0.5",
+          "actual": "4-5-0",
+          "luck": -1.1,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 2
+            },
+            {
+              "key": "FT%",
+              "rank": 12
+            },
+            {
+              "key": "3PM",
+              "rank": 5
+            },
+            {
+              "key": "PTS",
+              "rank": 7
+            },
+            {
+              "key": "REB",
+              "rank": 5
+            },
+            {
+              "key": "AST",
+              "rank": 8
+            },
+            {
+              "key": "STL",
+              "rank": 3
+            },
+            {
+              "key": "BLK",
+              "rank": 1
+            },
+            {
+              "key": "TO",
+              "rank": 6
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 1,
+          "name": "Far East Dynasty",
+          "abbrev": "FED",
+          "manager": "Leon",
+          "rating": 50.0,
+          "form": 49.0,
+          "season": 49.0,
+          "result": 55.6,
+          "week": 49.0,
+          "expected": "4.4-4.5-0.1",
+          "actual": "5-4-0",
+          "luck": 0.6,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 6
+            },
+            {
+              "key": "FT%",
+              "rank": 9
+            },
+            {
+              "key": "3PM",
+              "rank": 4
+            },
+            {
+              "key": "PTS",
+              "rank": 11
+            },
+            {
+              "key": "REB",
+              "rank": 1
+            },
+            {
+              "key": "AST",
+              "rank": 7
+            },
+            {
+              "key": "STL",
+              "rank": 1
+            },
+            {
+              "key": "BLK",
+              "rank": 11
+            },
+            {
+              "key": "TO",
+              "rank": 9
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 11,
+          "name": "LeBron's Loud Team",
+          "abbrev": "LLT",
+          "manager": "LeBron Sucks",
+          "rating": 49.2,
+          "form": 50.0,
+          "season": 50.0,
+          "result": 44.4,
+          "week": 50.0,
+          "expected": "4.4-4.4-0.3",
+          "actual": "4-5-0",
+          "luck": -0.5,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 7
+            },
+            {
+              "key": "FT%",
+              "rank": 7
+            },
+            {
+              "key": "3PM",
+              "rank": 1
+            },
+            {
+              "key": "PTS",
+              "rank": 4
+            },
+            {
+              "key": "REB",
+              "rank": 11
+            },
+            {
+              "key": "AST",
+              "rank": 3
+            },
+            {
+              "key": "STL",
+              "rank": 10
+            },
+            {
+              "key": "BLK",
+              "rank": 4
+            },
+            {
+              "key": "TO",
+              "rank": 10
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 2,
+          "name": "Wiener Wurtschen",
+          "abbrev": "WWS",
+          "manager": "Artem",
+          "rating": 48.8,
+          "form": 51.5,
+          "season": 51.5,
+          "result": 33.3,
+          "week": 51.5,
+          "expected": "4.5-4.2-0.4",
+          "actual": "3-6-0",
+          "luck": -1.6,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 8
+            },
+            {
+              "key": "FT%",
+              "rank": 4
+            },
+            {
+              "key": "3PM",
+              "rank": 5
+            },
+            {
+              "key": "PTS",
+              "rank": 4
+            },
+            {
+              "key": "REB",
+              "rank": 4
+            },
+            {
+              "key": "AST",
+              "rank": 6
+            },
+            {
+              "key": "STL",
+              "rank": 8
+            },
+            {
+              "key": "BLK",
+              "rank": 11
+            },
+            {
+              "key": "TO",
+              "rank": 5
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 3,
+          "name": "Captain Dredd's Pirates",
+          "abbrev": "DRED",
+          "manager": "Captain Dredd",
+          "rating": 46.2,
+          "form": 48.5,
+          "season": 48.5,
+          "result": 33.3,
+          "week": 48.5,
+          "expected": "4.4-4.6-0.0",
+          "actual": "3-6-0",
+          "luck": -1.4,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 11
+            },
+            {
+              "key": "FT%",
+              "rank": 2
+            },
+            {
+              "key": "3PM",
+              "rank": 11
+            },
+            {
+              "key": "PTS",
+              "rank": 10
+            },
+            {
+              "key": "REB",
+              "rank": 3
+            },
+            {
+              "key": "AST",
+              "rank": 11
+            },
+            {
+              "key": "STL",
+              "rank": 2
+            },
+            {
+              "key": "BLK",
+              "rank": 6
+            },
+            {
+              "key": "TO",
+              "rank": 4
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 5,
+          "name": "Na ptich'ih pravah zdes'",
+          "abbrev": "DM",
+          "manager": "David",
+          "rating": 46.1,
+          "form": 44.4,
+          "season": 44.4,
+          "result": 55.6,
+          "week": 44.4,
+          "expected": "4.0-5.0-0.0",
+          "actual": "5-4-0",
+          "luck": 1.0,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 9
+            },
+            {
+              "key": "FT%",
+              "rank": 1
+            },
+            {
+              "key": "3PM",
+              "rank": 10
+            },
+            {
+              "key": "PTS",
+              "rank": 12
+            },
+            {
+              "key": "REB",
+              "rank": 9
+            },
+            {
+              "key": "AST",
+              "rank": 12
+            },
+            {
+              "key": "STL",
+              "rank": 7
+            },
+            {
+              "key": "BLK",
+              "rank": 2
+            },
+            {
+              "key": "TO",
+              "rank": 2
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 4,
+          "name": "African Camp",
+          "abbrev": "ACA",
+          "manager": "Stepan",
+          "rating": 44.4,
+          "form": 43.4,
+          "season": 43.4,
+          "result": 50.0,
+          "week": 43.4,
+          "expected": "3.7-4.9-0.4",
+          "actual": "4-4-1",
+          "luck": 0.6,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 3
+            },
+            {
+              "key": "FT%",
+              "rank": 6
+            },
+            {
+              "key": "3PM",
+              "rank": 5
+            },
+            {
+              "key": "PTS",
+              "rank": 8
+            },
+            {
+              "key": "REB",
+              "rank": 12
+            },
+            {
+              "key": "AST",
+              "rank": 10
+            },
+            {
+              "key": "STL",
+              "rank": 10
+            },
+            {
+              "key": "BLK",
+              "rank": 8
+            },
+            {
+              "key": "TO",
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "rank": 11,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 8,
+          "name": "ChopLand",
+          "abbrev": "CHOP",
+          "manager": "Chop",
+          "rating": 41.0,
+          "form": 39.4,
+          "season": 39.4,
+          "result": 50.0,
+          "week": 39.4,
+          "expected": "3.4-5.3-0.4",
+          "actual": "4-4-1",
+          "luck": 1.0,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 5
+            },
+            {
+              "key": "FT%",
+              "rank": 11
+            },
+            {
+              "key": "3PM",
+              "rank": 12
+            },
+            {
+              "key": "PTS",
+              "rank": 6
+            },
+            {
+              "key": "REB",
+              "rank": 7
+            },
+            {
+              "key": "AST",
+              "rank": 9
+            },
+            {
+              "key": "STL",
+              "rank": 3
+            },
+            {
+              "key": "BLK",
+              "rank": 8
+            },
+            {
+              "key": "TO",
+              "rank": 6
+            }
+          ]
+        },
+        {
+          "rank": 12,
+          "prev_rank": null,
+          "move": null,
+          "team_id": 10,
+          "name": "MogTeam",
+          "abbrev": "MOG",
+          "manager": "Kolya",
+          "rating": 35.1,
+          "form": 37.4,
+          "season": 37.4,
+          "result": 22.2,
+          "week": 37.4,
+          "expected": "3.4-5.6-0.0",
+          "actual": "2-7-0",
+          "luck": -1.4,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 1
+            },
+            {
+              "key": "FT%",
+              "rank": 10
+            },
+            {
+              "key": "3PM",
+              "rank": 8
+            },
+            {
+              "key": "PTS",
+              "rank": 9
+            },
+            {
+              "key": "REB",
+              "rank": 8
+            },
+            {
+              "key": "AST",
+              "rank": 5
+            },
+            {
+              "key": "STL",
+              "rank": 12
+            },
+            {
+              "key": "BLK",
+              "rank": 10
+            },
+            {
+              "key": "TO",
+              "rank": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "period_id": 2,
+      "label": "Матчап 2",
+      "start": "2026-10-26",
+      "end": "2026-11-01",
+      "is_playoff": false,
+      "matchups_counted": 2,
+      "rows": [
+        {
+          "rank": 1,
+          "prev_rank": 3,
+          "move": 2,
+          "team_id": 9,
+          "name": "Lyubasik Titan's",
+          "abbrev": "LT",
+          "manager": "Roman",
+          "rating": 65.2,
+          "form": 64.4,
+          "season": 62.6,
+          "result": 72.2,
+          "week": 71.7,
+          "expected": "11.2-6.6-0.2",
+          "actual": "13-5-0",
+          "luck": 1.7,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 11
+            },
+            {
+              "key": "FT%",
+              "rank": 3
+            },
+            {
+              "key": "3PM",
+              "rank": 2
+            },
+            {
+              "key": "PTS",
+              "rank": 2
+            },
+            {
+              "key": "REB",
+              "rank": 8
+            },
+            {
+              "key": "AST",
+              "rank": 1
+            },
+            {
+              "key": "STL",
+              "rank": 6
+            },
+            {
+              "key": "BLK",
+              "rank": 4
+            },
+            {
+              "key": "TO",
+              "rank": 7
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "prev_rank": 2,
+          "move": 0,
+          "team_id": 12,
+          "name": "EV’s Supertuskers",
+          "abbrev": "LJ6",
+          "manager": "Egor",
+          "rating": 64.6,
+          "form": 63.3,
+          "season": 63.1,
+          "result": 72.2,
+          "week": 64.1,
+          "expected": "11.2-6.5-0.4",
+          "actual": "13-5-0",
+          "luck": 1.6,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 4
+            },
+            {
+              "key": "FT%",
+              "rank": 5
+            },
+            {
+              "key": "3PM",
+              "rank": 7
+            },
+            {
+              "key": "PTS",
+              "rank": 3
+            },
+            {
+              "key": "REB",
+              "rank": 6
+            },
+            {
+              "key": "AST",
+              "rank": 4
+            },
+            {
+              "key": "STL",
+              "rank": 9
+            },
+            {
+              "key": "BLK",
+              "rank": 2
+            },
+            {
+              "key": "TO",
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "prev_rank": 1,
+          "move": -2,
+          "team_id": 6,
+          "name": "Xz Cho's Exquisite Team",
+          "abbrev": "XET",
+          "manager": "Nikita",
+          "rating": 57.8,
+          "form": 57.9,
+          "season": 58.8,
+          "result": 55.6,
+          "week": 54.0,
+          "expected": "10.5-7.3-0.3",
+          "actual": "10-8-0",
+          "luck": -0.6,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 10
+            },
+            {
+              "key": "FT%",
+              "rank": 8
+            },
+            {
+              "key": "3PM",
+              "rank": 3
+            },
+            {
+              "key": "PTS",
+              "rank": 1
+            },
+            {
+              "key": "REB",
+              "rank": 4
+            },
+            {
+              "key": "AST",
+              "rank": 6
+            },
+            {
+              "key": "STL",
+              "rank": 1
+            },
+            {
+              "key": "BLK",
+              "rank": 3
+            },
+            {
+              "key": "TO",
+              "rank": 12
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "prev_rank": 5,
+          "move": 1,
+          "team_id": 1,
+          "name": "Far East Dynasty",
+          "abbrev": "FED",
+          "manager": "Leon",
+          "rating": 56.8,
+          "form": 55.4,
+          "season": 54.3,
+          "result": 66.7,
+          "week": 59.6,
+          "expected": "9.7-8.2-0.1",
+          "actual": "12-6-0",
+          "luck": 2.2,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 2
+            },
+            {
+              "key": "FT%",
+              "rank": 5
+            },
+            {
+              "key": "3PM",
+              "rank": 1
+            },
+            {
+              "key": "PTS",
+              "rank": 5
+            },
+            {
+              "key": "REB",
+              "rank": 1
+            },
+            {
+              "key": "AST",
+              "rank": 7
+            },
+            {
+              "key": "STL",
+              "rank": 5
+            },
+            {
+              "key": "BLK",
+              "rank": 12
+            },
+            {
+              "key": "TO",
+              "rank": 10
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "prev_rank": 9,
+          "move": 4,
+          "team_id": 5,
+          "name": "Na ptich'ih pravah zdes'",
+          "abbrev": "DM",
+          "manager": "David",
+          "rating": 56.6,
+          "form": 57.5,
+          "season": 55.3,
+          "result": 55.6,
+          "week": 66.2,
+          "expected": "9.9-8.0-0.1",
+          "actual": "10-8-0",
+          "luck": 0.0,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 6
+            },
+            {
+              "key": "FT%",
+              "rank": 1
+            },
+            {
+              "key": "3PM",
+              "rank": 6
+            },
+            {
+              "key": "PTS",
+              "rank": 9
+            },
+            {
+              "key": "REB",
+              "rank": 9
+            },
+            {
+              "key": "AST",
+              "rank": 9
+            },
+            {
+              "key": "STL",
+              "rank": 3
+            },
+            {
+              "key": "BLK",
+              "rank": 5
+            },
+            {
+              "key": "TO",
+              "rank": 3
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "prev_rank": 4,
+          "move": -2,
+          "team_id": 7,
+          "name": "ZeeBo Grit'n'Grind",
+          "abbrev": "ZBO",
+          "manager": "Max",
+          "rating": 48.4,
+          "form": 50.7,
+          "season": 51.8,
+          "result": 33.3,
+          "week": 46.5,
+          "expected": "9.0-8.4-0.6",
+          "actual": "6-12-0",
+          "luck": -3.3,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 5
+            },
+            {
+              "key": "FT%",
+              "rank": 11
+            },
+            {
+              "key": "3PM",
+              "rank": 8
+            },
+            {
+              "key": "PTS",
+              "rank": 7
+            },
+            {
+              "key": "REB",
+              "rank": 2
+            },
+            {
+              "key": "AST",
+              "rank": 11
+            },
+            {
+              "key": "STL",
+              "rank": 2
+            },
+            {
+              "key": "BLK",
+              "rank": 1
+            },
+            {
+              "key": "TO",
+              "rank": 6
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "prev_rank": 7,
+          "move": 0,
+          "team_id": 2,
+          "name": "Wiener Wurtschen",
+          "abbrev": "WWS",
+          "manager": "Artem",
+          "rating": 44.3,
+          "form": 47.0,
+          "season": 47.7,
+          "result": 27.8,
+          "week": 43.9,
+          "expected": "8.3-9.1-0.6",
+          "actual": "5-13-0",
+          "luck": -3.6,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 2
+            },
+            {
+              "key": "FT%",
+              "rank": 3
+            },
+            {
+              "key": "3PM",
+              "rank": 8
+            },
+            {
+              "key": "PTS",
+              "rank": 5
+            },
+            {
+              "key": "REB",
+              "rank": 4
+            },
+            {
+              "key": "AST",
+              "rank": 10
+            },
+            {
+              "key": "STL",
+              "rank": 11
+            },
+            {
+              "key": "BLK",
+              "rank": 7
+            },
+            {
+              "key": "TO",
+              "rank": 9
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "prev_rank": 6,
+          "move": -2,
+          "team_id": 11,
+          "name": "LeBron's Loud Team",
+          "abbrev": "LLT",
+          "manager": "LeBron Sucks",
+          "rating": 44.3,
+          "form": 43.9,
+          "season": 44.9,
+          "result": 44.4,
+          "week": 39.9,
+          "expected": "7.8-9.6-0.5",
+          "actual": "8-10-0",
+          "luck": -0.1,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 11
+            },
+            {
+              "key": "FT%",
+              "rank": 2
+            },
+            {
+              "key": "3PM",
+              "rank": 3
+            },
+            {
+              "key": "PTS",
+              "rank": 10
+            },
+            {
+              "key": "REB",
+              "rank": 12
+            },
+            {
+              "key": "AST",
+              "rank": 2
+            },
+            {
+              "key": "STL",
+              "rank": 6
+            },
+            {
+              "key": "BLK",
+              "rank": 6
+            },
+            {
+              "key": "TO",
+              "rank": 11
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "prev_rank": 11,
+          "move": 2,
+          "team_id": 8,
+          "name": "ChopLand",
+          "abbrev": "CHOP",
+          "manager": "Chop",
+          "rating": 42.4,
+          "form": 40.6,
+          "season": 40.4,
+          "result": 52.8,
+          "week": 41.4,
+          "expected": "7.0-10.5-0.5",
+          "actual": "9-8-1",
+          "luck": 2.2,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 9
+            },
+            {
+              "key": "FT%",
+              "rank": 11
+            },
+            {
+              "key": "3PM",
+              "rank": 11
+            },
+            {
+              "key": "PTS",
+              "rank": 4
+            },
+            {
+              "key": "REB",
+              "rank": 6
+            },
+            {
+              "key": "AST",
+              "rank": 4
+            },
+            {
+              "key": "STL",
+              "rank": 8
+            },
+            {
+              "key": "BLK",
+              "rank": 10
+            },
+            {
+              "key": "TO",
+              "rank": 5
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "prev_rank": 8,
+          "move": -2,
+          "team_id": 3,
+          "name": "Captain Dredd's Pirates",
+          "abbrev": "DRED",
+          "manager": "Captain Dredd",
+          "rating": 42.3,
+          "form": 43.6,
+          "season": 44.4,
+          "result": 33.3,
+          "week": 40.4,
+          "expected": "7.9-9.9-0.2",
+          "actual": "6-12-0",
+          "luck": -2.0,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 6
+            },
+            {
+              "key": "FT%",
+              "rank": 7
+            },
+            {
+              "key": "3PM",
+              "rank": 12
+            },
+            {
+              "key": "PTS",
+              "rank": 12
+            },
+            {
+              "key": "REB",
+              "rank": 3
+            },
+            {
+              "key": "AST",
+              "rank": 12
+            },
+            {
+              "key": "STL",
+              "rank": 3
+            },
+            {
+              "key": "BLK",
+              "rank": 7
+            },
+            {
+              "key": "TO",
+              "rank": 2
+            }
+          ]
+        },
+        {
+          "rank": 11,
+          "prev_rank": 10,
+          "move": -1,
+          "team_id": 4,
+          "name": "African Camp",
+          "abbrev": "ACA",
+          "manager": "Stepan",
+          "rating": 42.0,
+          "form": 38.9,
+          "season": 39.6,
+          "result": 58.3,
+          "week": 35.9,
+          "expected": "6.8-10.5-0.6",
+          "actual": "10-7-1",
+          "luck": 3.4,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 8
+            },
+            {
+              "key": "FT%",
+              "rank": 10
+            },
+            {
+              "key": "3PM",
+              "rank": 5
+            },
+            {
+              "key": "PTS",
+              "rank": 8
+            },
+            {
+              "key": "REB",
+              "rank": 11
+            },
+            {
+              "key": "AST",
+              "rank": 7
+            },
+            {
+              "key": "STL",
+              "rank": 12
+            },
+            {
+              "key": "BLK",
+              "rank": 9
+            },
+            {
+              "key": "TO",
+              "rank": 4
+            }
+          ]
+        },
+        {
+          "rank": 12,
+          "prev_rank": 12,
+          "move": 0,
+          "team_id": 10,
+          "name": "MogTeam",
+          "abbrev": "MOG",
+          "manager": "Kolya",
+          "rating": 35.4,
+          "form": 36.8,
+          "season": 36.9,
+          "result": 27.8,
+          "week": 36.4,
+          "expected": "6.5-11.2-0.4",
+          "actual": "5-13-0",
+          "luck": -1.6,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 1
+            },
+            {
+              "key": "FT%",
+              "rank": 9
+            },
+            {
+              "key": "3PM",
+              "rank": 10
+            },
+            {
+              "key": "PTS",
+              "rank": 11
+            },
+            {
+              "key": "REB",
+              "rank": 9
+            },
+            {
+              "key": "AST",
+              "rank": 3
+            },
+            {
+              "key": "STL",
+              "rank": 10
+            },
+            {
+              "key": "BLK",
+              "rank": 11
+            },
+            {
+              "key": "TO",
+              "rank": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "period_id": 3,
+      "label": "Матчап 3",
+      "start": "2026-11-02",
+      "end": "2026-11-08",
+      "is_playoff": false,
+      "matchups_counted": 3,
+      "rows": [
+        {
+          "rank": 1,
+          "prev_rank": 1,
+          "move": 0,
+          "team_id": 9,
+          "name": "Lyubasik Titan's",
+          "abbrev": "LT",
+          "manager": "Roman",
+          "rating": 64.9,
+          "form": 65.2,
+          "season": 63.3,
+          "result": 66.7,
+          "week": 64.6,
+          "expected": "16.9-9.7-0.4",
+          "actual": "18-9-0",
+          "luck": 0.9,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 10
+            },
+            {
+              "key": "FT%",
+              "rank": 5
+            },
+            {
+              "key": "3PM",
+              "rank": 2
+            },
+            {
+              "key": "PTS",
+              "rank": 2
+            },
+            {
+              "key": "REB",
+              "rank": 7
+            },
+            {
+              "key": "AST",
+              "rank": 1
+            },
+            {
+              "key": "STL",
+              "rank": 4
+            },
+            {
+              "key": "BLK",
+              "rank": 4
+            },
+            {
+              "key": "TO",
+              "rank": 9
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "prev_rank": 2,
+          "move": 0,
+          "team_id": 12,
+          "name": "EV’s Supertuskers",
+          "abbrev": "LJ6",
+          "manager": "Egor",
+          "rating": 59.1,
+          "form": 58.0,
+          "season": 59.6,
+          "result": 63.0,
+          "week": 52.5,
+          "expected": "15.9-10.7-0.4",
+          "actual": "17-10-0",
+          "luck": 0.9,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 2
+            },
+            {
+              "key": "FT%",
+              "rank": 2
+            },
+            {
+              "key": "3PM",
+              "rank": 7
+            },
+            {
+              "key": "PTS",
+              "rank": 3
+            },
+            {
+              "key": "REB",
+              "rank": 8
+            },
+            {
+              "key": "AST",
+              "rank": 8
+            },
+            {
+              "key": "STL",
+              "rank": 10
+            },
+            {
+              "key": "BLK",
+              "rank": 1
+            },
+            {
+              "key": "TO",
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "prev_rank": 4,
+          "move": 1,
+          "team_id": 1,
+          "name": "Far East Dynasty",
+          "abbrev": "FED",
+          "manager": "Leon",
+          "rating": 56.0,
+          "form": 55.1,
+          "season": 54.2,
+          "result": 63.0,
+          "week": 54.0,
+          "expected": "14.5-12.2-0.4",
+          "actual": "17-10-0",
+          "luck": 2.4,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 4
+            },
+            {
+              "key": "FT%",
+              "rank": 10
+            },
+            {
+              "key": "3PM",
+              "rank": 1
+            },
+            {
+              "key": "PTS",
+              "rank": 4
+            },
+            {
+              "key": "REB",
+              "rank": 1
+            },
+            {
+              "key": "AST",
+              "rank": 5
+            },
+            {
+              "key": "STL",
+              "rank": 3
+            },
+            {
+              "key": "BLK",
+              "rank": 12
+            },
+            {
+              "key": "TO",
+              "rank": 10
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "prev_rank": 3,
+          "move": -1,
+          "team_id": 6,
+          "name": "Xz Cho's Exquisite Team",
+          "abbrev": "XET",
+          "manager": "Nikita",
+          "rating": 55.6,
+          "form": 55.1,
+          "season": 56.9,
+          "result": 55.6,
+          "week": 53.0,
+          "expected": "15.0-11.3-0.7",
+          "actual": "15-12-0",
+          "luck": -0.4,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 12
+            },
+            {
+              "key": "FT%",
+              "rank": 9
+            },
+            {
+              "key": "3PM",
+              "rank": 4
+            },
+            {
+              "key": "PTS",
+              "rank": 1
+            },
+            {
+              "key": "REB",
+              "rank": 3
+            },
+            {
+              "key": "AST",
+              "rank": 3
+            },
+            {
+              "key": "STL",
+              "rank": 1
+            },
+            {
+              "key": "BLK",
+              "rank": 5
+            },
+            {
+              "key": "TO",
+              "rank": 12
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "prev_rank": 6,
+          "move": 1,
+          "team_id": 7,
+          "name": "ZeeBo Grit'n'Grind",
+          "abbrev": "ZBO",
+          "manager": "Max",
+          "rating": 55.2,
+          "form": 56.1,
+          "season": 55.2,
+          "result": 51.9,
+          "week": 62.1,
+          "expected": "14.5-11.7-0.7",
+          "actual": "14-13-0",
+          "luck": -0.9,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 3
+            },
+            {
+              "key": "FT%",
+              "rank": 12
+            },
+            {
+              "key": "3PM",
+              "rank": 8
+            },
+            {
+              "key": "PTS",
+              "rank": 6
+            },
+            {
+              "key": "REB",
+              "rank": 2
+            },
+            {
+              "key": "AST",
+              "rank": 11
+            },
+            {
+              "key": "STL",
+              "rank": 2
+            },
+            {
+              "key": "BLK",
+              "rank": 2
+            },
+            {
+              "key": "TO",
+              "rank": 5
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "prev_rank": 8,
+          "move": 2,
+          "team_id": 11,
+          "name": "LeBron's Loud Team",
+          "abbrev": "LLT",
+          "manager": "LeBron Sucks",
+          "rating": 54.4,
+          "form": 55.0,
+          "season": 52.2,
+          "result": 55.6,
+          "week": 66.7,
+          "expected": "13.8-12.6-0.5",
+          "actual": "15-12-0",
+          "luck": 0.9,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 8
+            },
+            {
+              "key": "FT%",
+              "rank": 5
+            },
+            {
+              "key": "3PM",
+              "rank": 2
+            },
+            {
+              "key": "PTS",
+              "rank": 5
+            },
+            {
+              "key": "REB",
+              "rank": 10
+            },
+            {
+              "key": "AST",
+              "rank": 2
+            },
+            {
+              "key": "STL",
+              "rank": 6
+            },
+            {
+              "key": "BLK",
+              "rank": 3
+            },
+            {
+              "key": "TO",
+              "rank": 11
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "prev_rank": 5,
+          "move": -2,
+          "team_id": 5,
+          "name": "Na ptich'ih pravah zdes'",
+          "abbrev": "DM",
+          "manager": "David",
+          "rating": 51.7,
+          "form": 51.7,
+          "season": 51.7,
+          "result": 51.9,
+          "week": 44.4,
+          "expected": "13.7-12.8-0.5",
+          "actual": "14-13-0",
+          "luck": 0.0,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 5
+            },
+            {
+              "key": "FT%",
+              "rank": 1
+            },
+            {
+              "key": "3PM",
+              "rank": 6
+            },
+            {
+              "key": "PTS",
+              "rank": 9
+            },
+            {
+              "key": "REB",
+              "rank": 9
+            },
+            {
+              "key": "AST",
+              "rank": 9
+            },
+            {
+              "key": "STL",
+              "rank": 5
+            },
+            {
+              "key": "BLK",
+              "rank": 8
+            },
+            {
+              "key": "TO",
+              "rank": 3
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "prev_rank": 11,
+          "move": 3,
+          "team_id": 4,
+          "name": "African Camp",
+          "abbrev": "ACA",
+          "manager": "Stepan",
+          "rating": 42.8,
+          "form": 40.9,
+          "season": 40.9,
+          "result": 53.7,
+          "week": 43.4,
+          "expected": "10.7-15.6-0.6",
+          "actual": "14-12-1",
+          "luck": 3.5,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 9
+            },
+            {
+              "key": "FT%",
+              "rank": 8
+            },
+            {
+              "key": "3PM",
+              "rank": 5
+            },
+            {
+              "key": "PTS",
+              "rank": 8
+            },
+            {
+              "key": "REB",
+              "rank": 12
+            },
+            {
+              "key": "AST",
+              "rank": 6
+            },
+            {
+              "key": "STL",
+              "rank": 12
+            },
+            {
+              "key": "BLK",
+              "rank": 10
+            },
+            {
+              "key": "TO",
+              "rank": 4
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "prev_rank": 9,
+          "move": 0,
+          "team_id": 8,
+          "name": "ChopLand",
+          "abbrev": "CHOP",
+          "manager": "Chop",
+          "rating": 42.3,
+          "form": 41.1,
+          "season": 40.7,
+          "result": 50.0,
+          "week": 41.4,
+          "expected": "10.6-15.6-0.7",
+          "actual": "13-13-1",
+          "luck": 2.5,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 11
+            },
+            {
+              "key": "FT%",
+              "rank": 11
+            },
+            {
+              "key": "3PM",
+              "rank": 11
+            },
+            {
+              "key": "PTS",
+              "rank": 7
+            },
+            {
+              "key": "REB",
+              "rank": 5
+            },
+            {
+              "key": "AST",
+              "rank": 4
+            },
+            {
+              "key": "STL",
+              "rank": 8
+            },
+            {
+              "key": "BLK",
+              "rank": 9
+            },
+            {
+              "key": "TO",
+              "rank": 7
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "prev_rank": 12,
+          "move": 2,
+          "team_id": 10,
+          "name": "MogTeam",
+          "abbrev": "MOG",
+          "manager": "Kolya",
+          "rating": 39.6,
+          "form": 42.6,
+          "season": 40.7,
+          "result": 25.9,
+          "week": 48.5,
+          "expected": "10.7-15.7-0.5",
+          "actual": "7-20-0",
+          "luck": -4.0,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 1
+            },
+            {
+              "key": "FT%",
+              "rank": 4
+            },
+            {
+              "key": "3PM",
+              "rank": 9
+            },
+            {
+              "key": "PTS",
+              "rank": 11
+            },
+            {
+              "key": "REB",
+              "rank": 11
+            },
+            {
+              "key": "AST",
+              "rank": 6
+            },
+            {
+              "key": "STL",
+              "rank": 9
+            },
+            {
+              "key": "BLK",
+              "rank": 11
+            },
+            {
+              "key": "TO",
+              "rank": 6
+            }
+          ]
+        },
+        {
+          "rank": 11,
+          "prev_rank": 7,
+          "move": -4,
+          "team_id": 2,
+          "name": "Wiener Wurtschen",
+          "abbrev": "WWS",
+          "manager": "Artem",
+          "rating": 39.4,
+          "form": 41.7,
+          "season": 44.1,
+          "result": 22.2,
+          "week": 36.9,
+          "expected": "11.5-14.6-0.9",
+          "actual": "6-21-0",
+          "luck": -5.9,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 5
+            },
+            {
+              "key": "FT%",
+              "rank": 3
+            },
+            {
+              "key": "3PM",
+              "rank": 9
+            },
+            {
+              "key": "PTS",
+              "rank": 9
+            },
+            {
+              "key": "REB",
+              "rank": 6
+            },
+            {
+              "key": "AST",
+              "rank": 9
+            },
+            {
+              "key": "STL",
+              "rank": 11
+            },
+            {
+              "key": "BLK",
+              "rank": 6
+            },
+            {
+              "key": "TO",
+              "rank": 8
+            }
+          ]
+        },
+        {
+          "rank": 12,
+          "prev_rank": 10,
+          "move": -2,
+          "team_id": 3,
+          "name": "Captain Dredd's Pirates",
+          "abbrev": "DRED",
+          "manager": "Captain Dredd",
+          "rating": 38.8,
+          "form": 37.7,
+          "season": 40.4,
+          "result": 40.7,
+          "week": 32.3,
+          "expected": "10.6-15.8-0.5",
+          "actual": "11-16-0",
+          "luck": 0.1,
+          "cat_ranks": [
+            {
+              "key": "FG%",
+              "rank": 7
+            },
+            {
+              "key": "FT%",
+              "rank": 7
+            },
+            {
+              "key": "3PM",
+              "rank": 12
+            },
+            {
+              "key": "PTS",
+              "rank": 12
+            },
+            {
+              "key": "REB",
+              "rank": 4
+            },
+            {
+              "key": "AST",
+              "rank": 12
+            },
+            {
+              "key": "STL",
+              "rank": 7
+            },
+            {
+              "key": "BLK",
+              "rank": 6
+            },
+            {
+              "key": "TO",
+              "rank": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
