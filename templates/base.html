@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page == 'home' %}Bird Rights Keeper League{% else %}{{ page_title }} — Bird Rights Keeper League{% endif %}</title>
+<meta name="description" content="Bird Rights Keeper League — фентези-лига НБА на ESPN: турнирная таблица, матчапы, команды, правила и история.">
+<meta name="theme-color" content="#04070e">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:title" content="Bird Rights Keeper League">
+<meta property="og:description" content="Турнирная таблица, матчапы, команды и устав лиги.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/RussoOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/PTSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css?v={{ css_v }}">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body class="page-{{ page }}">
+<a class="skip-link" href="#main">К содержанию</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Bird Rights Keeper League — на главную">
+      <img src="assets/img/logo-96.webp" srcset="assets/img/logo-96.webp 1x, assets/img/logo-160.webp 2x" width="48" height="48" alt="">
+      <span class="brand-text"><span class="brand-name">Bird Rights</span><span class="brand-sub">Keeper League</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="nav-toggle-label">Меню</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Разделы сайта">
+      <ul>
+        {% for filename, title, key in pages %}
+        <li><a href="{{ filename }}"{% if key == page %} aria-current="page"{% endif %}>{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-name">Bird Rights Keeper League</p>
+    <p class="footer-updated">{% if updated %}Данные обновлены: {{ updated }}{% else %}Данные ещё не загружены{% endif %}</p>
+  </div>
+</footer>
+<script src="assets/js/site.js?v={{ js_v }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block content %}
+{{ ui.page_head('История', 'Сезоны лиги и их чемпионы.') }}
+<div class="wrap section">
+  {% if seasons %}
+  <div class="seasons">
+    {% for s in seasons %}
+    <article class="season">
+      <header class="season-head">
+        <h2>Сезон {{ s.label or s.season }}</h2>
+      </header>
+      <dl class="season-honors">
+        {% if s.champion %}<div class="is-champion"><dt>Чемпион</dt><dd><b>{{ s.champion.team }}</b><small>{{ s.champion.manager }}</small></dd></div>{% endif %}
+        {% if s.runner_up %}<div><dt>Финалист</dt><dd><b>{{ s.runner_up.team }}</b><small>{{ s.runner_up.manager }}</small></dd></div>{% endif %}
+        {% if s.regular_season_winner %}<div><dt>Победитель регулярки</dt><dd><b>{{ s.regular_season_winner.team }}</b><small>{{ s.regular_season_winner.manager }}</small></dd></div>{% endif %}
+      </dl>
+      {% if s.final_standings %}
+      <details class="season-table">
+        <summary>Итоговая таблица</summary>
+        <div class="table-scroll">
+          <table class="plain-table">
+            <thead><tr><th scope="col">Место</th><th scope="col">Команда</th><th scope="col">Менеджер</th><th scope="col">В регулярке</th><th scope="col">Категории</th></tr></thead>
+            <tbody>
+              {% for r in s.final_standings %}
+              <tr><td>{{ r.place }}</td><td>{{ r.team }}</td><td>{{ r.manager }}</td><td>{{ r.regular_rank }}</td><td>{{ r.record }}</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </details>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="pennant">
+    <img src="assets/img/logo-160.webp" width="112" height="112" alt="">
+    <p class="pennant-title">История пишется</p>
+    <p>Первый чемпион будет определён в&nbsp;{{ next_champion_year }}&nbsp;году.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block content %}
+{{ ui.page_head('Турнирная таблица', ('Сезон ' ~ season_label ~ '. Каждая из девяти категорий матчапа идёт в зачёт отдельно.') if season_label else None) }}
+<div class="wrap section">
+  {% if rows %}
+  <div class="table-scroll standings-scroll" tabindex="0" role="region" aria-label="Турнирная таблица, прокручивается по горизонтали">
+    <table class="standings">
+      <thead>
+        <tr>
+          <th class="col-rank sticky-1" scope="col"><abbr title="Место">№</abbr></th>
+          <th class="col-team sticky-2" scope="col">Команда</th>
+          <th class="num" scope="col"><abbr title="Победы по категориям">В</abbr></th>
+          <th class="num" scope="col"><abbr title="Поражения по категориям">П</abbr></th>
+          <th class="num" scope="col"><abbr title="Ничьи по категориям">Н</abbr></th>
+          <th class="num" scope="col"><abbr title="Процент побед">%</abbr></th>
+          <th class="num" scope="col"><abbr title="Отставание от лидера">Отст.</abbr></th>
+          <th class="num" scope="col">Матчапы</th>
+          {% if standings.has_streak %}<th class="num" scope="col">Серия</th>{% endif %}
+          <th class="col-manager" scope="col">Менеджер</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in rows %}
+        <tr class="{% if r.in_playoff_zone %}in-zone{% endif %}{% if r.rank == playoff_spots and not loop.last %} zone-edge{% endif %}">
+          <td class="col-rank sticky-1"><span class="rank">{{ r.rank }}</span></td>
+          <th class="col-team sticky-2" scope="row"><span class="team-name">{{ r.name }}</span></th>
+          <td class="num strong">{{ r.wins }}</td>
+          <td class="num">{{ r.losses }}</td>
+          <td class="num">{{ r.ties }}</td>
+          <td class="num strong">{{ r.pct }}</td>
+          <td class="num">{{ r.gb }}</td>
+          <td class="num">{{ r.matchups.w }}-{{ r.matchups.l }}-{{ r.matchups.t }}</td>
+          {% if standings.has_streak %}<td class="num">{{ r.streak or '—' }}</td>{% endif %}
+          <td class="col-manager"><span class="manager">{{ r.manager }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <ul class="legend">
+    {% if playoff_spots %}<li><span class="rank rank-demo">1</span> Зона плей-офф: первые {{ playoff_spots }} {{ plural(playoff_spots, 'место', 'места', 'мест') }} из {{ rows|length }}</li>{% endif %}
+    <li><span><b>В, П, Н</b> — выигранные, проигранные и сыгранные вничью категории</span></li>
+    <li><span><b>Матчапы</b> — победы, поражения и ничьи в матчапах целиком</span></li>
+  </ul>
+  {% else %}
+  {{ ui.empty('Таблицы пока нет', 'Сезон ещё не начался. Таблица появится после первых матчей.') }}
+  {% endif %}
+</div>
+{% endblock %}

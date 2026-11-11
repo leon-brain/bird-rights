@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block content %}
+{{ ui.page_head('Правила', 'Настройки лиги на ESPN и устав. Если они расходятся, действует устав.') }}
+<div class="wrap">
+  <nav class="subnav" aria-label="Части страницы">
+    <a href="#espn">Настройки ESPN</a>
+    <a href="#ustav">Устав лиги</a>
+  </nav>
+</div>
+
+<section class="wrap section" id="espn" aria-labelledby="espn-h">
+  <h2 class="section-h" id="espn-h">Настройки ESPN</h2>
+  {% if espn_groups %}
+  <p class="section-note">Раздел собирается автоматически из данных ESPN{% if updated %}, последнее обновление — {{ updated }}{% endif %}.</p>
+  <div class="settings">
+    {% for g in espn_groups %}
+    <section class="settings-group">
+      <h3>{{ g.title }}</h3>
+      <dl>
+        {% for r in g.rows %}<div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>{% endfor %}
+      </dl>
+    </section>
+    {% endfor %}
+  </div>
+  {% else %}
+  {{ ui.empty('Настройки ещё не загружены', 'Раздел заполнится после первой выгрузки данных из ESPN.') }}
+  {% endif %}
+</section>
+
+<section class="wrap section" id="ustav" aria-labelledby="ustav-h">
+  <h2 class="section-h" id="ustav-h">{{ charter.title if charter else 'Устав лиги' }}</h2>
+  {% if charter %}
+  <div class="charter-intro">{{ charter.intro }}</div>
+  <div class="charter-layout">
+    <details class="toc" id="toc" open>
+      <summary>Разделы устава</summary>
+      <ol>
+        {% for t in charter.toc %}
+        <li><a href="#{{ t.id }}"><span class="toc-num">{{ t.num }}</span><span>{{ t.title }}</span></a></li>
+        {% endfor %}
+      </ol>
+    </details>
+    <div class="charter">{{ charter.html }}</div>
+  </div>
+  {% else %}
+  {{ ui.empty('Устав не найден', 'Добавьте файл rules.md в корень репозитория.') }}
+  {% endif %}
+</section>
+{% endblock %}

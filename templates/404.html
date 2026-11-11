@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block content %}
+{{ ui.page_head('Страница не найдена') }}
+<div class="wrap section">
+  <div class="empty">
+    <p class="empty-title">Такой страницы нет</p>
+    <p>Возможно, ссылка устарела. <a href="index.html">Перейти на главную</a></p>
+  </div>
+</div>
+{% endblock %}

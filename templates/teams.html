@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block content %}
+{{ ui.page_head('Команды и менеджеры', ('Сезон ' ~ season_label ~ ', ' ~ teams|length ~ ' ' ~ plural(teams|length, 'команда', 'команды', 'команд') ~ '.') if teams and season_label else None) }}
+<div class="wrap section">
+  {% if teams %}
+  <ul class="cards">
+    {% for t in teams %}
+    <li class="card{% if t.in_playoff_zone %} in-zone{% endif %}">
+      <div class="card-top">
+        <span class="card-mono" aria-hidden="true">{{ (t.abbrev or t.name[:3])|upper }}</span>
+        <span class="card-place"><b>{{ t.rank }}</b> место</span>
+      </div>
+      <h2 class="card-name">{{ t.name }}</h2>
+      <p class="card-manager"><span>Менеджер</span> {{ t.manager }}</p>
+      <dl class="card-stats">
+        <div><dt>Категории</dt><dd>{{ t|record }}</dd></div>
+        <div><dt>Побед</dt><dd>{{ t.pct }}</dd></div>
+        <div><dt>Матчапы</dt><dd>{{ t.matchups.w }}-{{ t.matchups.l }}-{{ t.matchups.t }}</dd></div>
+      </dl>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  {{ ui.empty('Команд пока нет', 'Список появится, когда лига будет сформирована на ESPN.') }}
+  {% endif %}
+</div>
+{% endblock %}

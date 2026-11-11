@@ -1,0 +1,85 @@
+{% macro page_head(title, lead=None) %}
+<div class="page-head">
+  <div class="wrap">
+    <h1>{{ title }}</h1>
+    {% if lead %}<p class="page-lead">{{ lead }}</p>{% endif %}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro empty(title, text) %}
+<div class="empty">
+  <p class="empty-title">{{ title }}</p>
+  <p>{{ text }}</p>
+</div>
+{% endmacro %}
+
+{% macro period_meta(p) %}
+{%- if p.start and p.end -%}
+{{ ru_range(p.start, p.end) }}, {{ p.weeks }} {{ plural(p.weeks, 'неделя', 'недели', 'недель') }}
+{%- endif -%}
+{% endmacro %}
+
+{# Компактная строка «команда — счёт — команда» для главной #}
+{% macro pair_row(m, show_score=True) %}
+<li class="pair{% if m.winner == 'home' %} home-won{% elif m.winner == 'away' %} away-won{% endif %}">
+  <span class="pair-team pair-home">{{ m.home.name }}</span>
+  {% if show_score and m.cats %}
+  <span class="pair-score" aria-label="Счёт по категориям {{ m.home.wins }}-{{ m.home.losses }}-{{ m.home.ties }}">
+    <b>{{ m.home.wins }}</b><i>:</i><b>{{ m.away.wins }}</b>
+    {% if m.home.ties %}<small>ничьих {{ m.home.ties }}</small>{% endif %}
+  </span>
+  {% else %}
+  <span class="pair-score is-vs">–</span>
+  {% endif %}
+  <span class="pair-team pair-away">{{ m.away.name }}</span>
+</li>
+{% endmacro %}
+
+{# Полная карточка матчапа с категориями #}
+{% macro matchup_card(m, uid, live=False) %}
+{% set lead = m.winner or ('home' if m.home.wins > m.away.wins else 'away' if m.away.wins > m.home.wins else 'tie') if m.cats else None %}
+<article class="mu{% if lead == 'home' %} home-won{% elif lead == 'away' %} away-won{% endif %}{% if not m.cats %} no-cats{% endif %}">
+  {% if m.tier %}<p class="mu-tier">{{ m.tier }}</p>{% endif %}
+  <div class="mu-body">
+    <div class="mu-head">
+      <div class="mu-team mu-home">
+        <span class="mu-name">{{ m.home.name }}</span>
+        {% if m.cats %}<span class="mu-score">{{ m.home.wins }}</span>{% endif %}
+      </div>
+      <div class="mu-team mu-away">
+        <span class="mu-name">{{ m.away.name }}</span>
+        {% if m.cats %}<span class="mu-score">{{ m.away.wins }}</span>{% endif %}
+      </div>
+    </div>
+    {% if m.cats %}
+    <div class="mu-cats" id="cats-{{ uid }}" style="--cats: {{ m.cats|length }}">
+      <div class="cat cat-head" aria-hidden="true">
+        <span class="cat-l"></span>
+        <span class="cat-v cat-a">{{ m.home.abbrev or 'Дома' }}</span>
+        <span class="cat-v cat-b">{{ m.away.abbrev or 'Гости' }}</span>
+      </div>
+      {% for c in m.cats %}
+      <div class="cat">
+        <span class="cat-l">{{ c.key }}</span>
+        <span class="cat-v cat-a{% if c.winner == 'home' %} won{% elif c.winner == 'tie' %} tied{% endif %}">{{ c.home }}</span>
+        <span class="cat-v cat-b{% if c.winner == 'away' %} won{% elif c.winner == 'tie' %} tied{% endif %}">{{ c.away }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% if m.cats %}
+  <div class="mu-foot">
+    <span class="mu-result">
+      {%- if live %}Идёт, счёт {% else %}Счёт {% endif -%}
+      {{ m.home.wins }}-{{ m.home.losses }}-{{ m.home.ties }}
+      {%- if m.winner == 'tie' %}, ничья{% endif -%}
+    </span>
+    <button class="mu-toggle" type="button" aria-expanded="false" aria-controls="cats-{{ uid }}">
+      <span class="when-closed">Показать категории</span><span class="when-open">Скрыть категории</span>
+    </button>
+  </div>
+  {% endif %}
+</article>
+{% endmacro %}

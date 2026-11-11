@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block content %}
+{{ ui.page_head('Матчапы', 'Счёт — число выигранных категорий. Выигранная категория подсвечена золотом.' if periods else None) }}
+<div class="wrap section">
+  {% if periods %}
+  <nav class="period-nav" aria-label="Выбор матчап-периода">
+    <button class="period-step" type="button" data-step="-1" aria-label="Предыдущий период">‹</button>
+    <label class="period-select">
+      <span class="visually-hidden">Матчап-период</span>
+      <select id="period-select">
+        {% for p in periods %}
+        <option value="p{{ p.id }}"{% if default_period and p.id == default_period.id %} selected{% endif %}>
+          {{- p.label }}{% if p.start %} · {{ ru_range(p.start, p.end) }}{% endif %}{% if p.state == 'current' %} · идёт{% endif -%}
+        </option>
+        {% endfor %}
+      </select>
+    </label>
+    <button class="period-step" type="button" data-step="1" aria-label="Следующий период">›</button>
+  </nav>
+  <ol class="period-chips" aria-label="Все матчап-периоды">
+    {% for p in periods %}
+    <li><a href="#p{{ p.id }}" class="chip is-{{ p.state }}{% if p.is_playoff %} is-playoff{% endif %}" data-period="p{{ p.id }}" title="{{ p.label }}{% if p.start %}, {{ ru_range(p.start, p.end) }}{% endif %}">
+      {%- if p.is_playoff %}{{ p.label }}{% else %}{{ p.id }}{% endif -%}
+    </a></li>
+    {% endfor %}
+  </ol>
+
+  {% for p in periods %}
+  <section class="period{% if default_period and p.id == default_period.id %} is-active{% endif %}" id="p{{ p.id }}" data-period-section aria-labelledby="p{{ p.id }}-h">
+    <header class="period-head">
+      <h2 id="p{{ p.id }}-h">{{ p.label }}</h2>
+      <p class="period-meta">
+        {% if p.start %}<span>{{ ui.period_meta(p) }}</span>{% endif %}
+        <span class="state state-{{ p.state }}">{% if p.state == 'current' %}идёт сейчас{% elif p.state == 'past' %}завершён{% else %}впереди{% endif %}</span>
+      </p>
+    </header>
+    {% if p.matchups %}
+    <div class="mu-list">
+      {% for m in p.matchups %}{{ ui.matchup_card(m, p.id ~ '-' ~ loop.index, live=(p.state == 'current')) }}{% endfor %}
+    </div>
+    {% elif p.is_playoff %}
+    {{ ui.empty('Пары ещё не определены', 'Сетка плей-офф появится после окончания регулярного сезона.') }}
+    {% else %}
+    {{ ui.empty('Пар пока нет', 'ESPN ещё не опубликовал расписание этого периода.') }}
+    {% endif %}
+  </section>
+  {% endfor %}
+  {% else %}
+  {{ ui.empty('Матчапов пока нет', 'Сезон ещё не начался. Расписание появится, когда его опубликует ESPN.') }}
+  {% endif %}
+</div>
+{% endblock %}

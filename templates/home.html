@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui %}
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <img class="hero-logo" src="assets/img/logo-320.webp" srcset="assets/img/logo-320.webp 320w, assets/img/logo-640.webp 640w" sizes="(min-width: 900px) 340px, 200px" width="320" height="320" alt="Логотип Bird Rights Keeper League">
+    <div class="hero-text">
+      <h1>Bird Rights <span>Keeper League</span></h1>
+      <p class="hero-lead">Фентези-баскетбол НБА на ESPN: {{ league.team_count or 12 }} команд, девять категорий, до четырёх киперов.</p>
+      {% if season_label or current or upcoming %}
+      <dl class="hero-facts">
+        {% if season_label %}<div><dt>Сезон</dt><dd>{{ season_label }}</dd></div>{% endif %}
+        {% if current %}
+        <div><dt>Сейчас идёт</dt><dd>{{ current.label }}</dd></div>
+        <div><dt>Сроки</dt><dd>{{ ru_range(current.start, current.end) }}</dd></div>
+        {% elif league.phase == 'finished' %}
+        <div><dt>Статус</dt><dd>Сезон завершён</dd></div>
+        {% elif upcoming %}
+        <div><dt>Старт</dt><dd>{{ upcoming.start|ru_date }}</dd></div>
+        {% endif %}
+      </dl>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap home-grid">
+  <section class="panel home-current" aria-labelledby="h-current">
+    <header class="panel-head">
+      <h2 id="h-current">{% if current %}{{ current.label }}{% elif upcoming %}Ближайший матчап{% else %}Текущий матчап{% endif %}</h2>
+      {% if current %}<p class="panel-meta">{{ ui.period_meta(current) }}</p>{% elif upcoming %}<p class="panel-meta">{{ ui.period_meta(upcoming) }}</p>{% endif %}
+    </header>
+    {% set shown = current or upcoming %}
+    {% if shown and shown.matchups %}
+    <ul class="pairs">
+      {% for m in shown.matchups %}{{ ui.pair_row(m, show_score=(shown.state == 'current')) }}{% endfor %}
+    </ul>
+    {% if shown.state == 'current' %}<p class="panel-note">Счёт по выигранным категориям, обновляется раз в сутки.</p>{% endif %}
+    <a class="more" href="matchups.html#p{{ shown.id }}">Все категории матчапа</a>
+    {% elif league.phase == 'finished' %}
+    {{ ui.empty('Сезон завершён', 'Итоги сезона — на странице «История».') }}
+    {% else %}
+    {{ ui.empty('Матчапов пока нет', 'Пары появятся, когда ESPN опубликует расписание сезона.') }}
+    {% endif %}
+  </section>
+
+  <section class="panel home-leaders" aria-labelledby="h-leaders">
+    <header class="panel-head">
+      <h2 id="h-leaders">Лидеры таблицы</h2>
+      {% if rows %}<p class="panel-meta">Победы, поражения и ничьи по категориям</p>{% endif %}
+    </header>
+    {% if rows %}
+    <ol class="leaders">
+      {% for r in rows[:5] %}
+      <li>
+        <span class="leaders-rank">{{ r.rank }}</span>
+        <span class="leaders-team"><b>{{ r.name }}</b><small>{{ r.manager }}</small></span>
+        <span class="leaders-rec">{{ r|record }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+    <a class="more" href="standings.html">Вся таблица</a>
+    {% else %}
+    {{ ui.empty('Таблицы пока нет', 'Она появится после первых матчей сезона.') }}
+    {% endif %}
+  </section>
+
+  <section class="panel home-last" aria-labelledby="h-last">
+    <header class="panel-head">
+      <h2 id="h-last">{% if last_done %}Итоги: {{ last_done.label|lower if last_done.is_playoff else last_done.label|replace('Матчап', 'матчап') }}{% else %}Последние результаты{% endif %}</h2>
+      {% if last_done %}<p class="panel-meta">{{ ui.period_meta(last_done) }}</p>{% endif %}
+    </header>
+    {% if last_done %}
+    <ul class="pairs">
+      {% for m in last_done.matchups %}{{ ui.pair_row(m) }}{% endfor %}
+    </ul>
+    <a class="more" href="matchups.html#p{{ last_done.id }}">Все категории матчапа</a>
+    {% else %}
+    {{ ui.empty('Завершённых матчапов нет', 'Результаты появятся после первого матчапа сезона.') }}
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

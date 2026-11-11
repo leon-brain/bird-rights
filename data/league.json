@@ -1,0 +1,151 @@
+{
+  "updated_at": "2026-11-11T09:30:20Z",
+  "name": "Bird Rights Keeper League",
+  "espn_name": "Bird Rights",
+  "season": 2027,
+  "season_label": "2026-27",
+  "phase": "regular",
+  "current_period": 4,
+  "regular_periods": 16,
+  "playoff_spots": 8,
+  "team_count": 12,
+  "categories": [
+    {
+      "id": 19,
+      "key": "FG%",
+      "reverse": false
+    },
+    {
+      "id": 20,
+      "key": "FT%",
+      "reverse": false
+    },
+    {
+      "id": 17,
+      "key": "3PM",
+      "reverse": false
+    },
+    {
+      "id": 0,
+      "key": "PTS",
+      "reverse": false
+    },
+    {
+      "id": 6,
+      "key": "REB",
+      "reverse": false
+    },
+    {
+      "id": 3,
+      "key": "AST",
+      "reverse": false
+    },
+    {
+      "id": 2,
+      "key": "STL",
+      "reverse": false
+    },
+    {
+      "id": 1,
+      "key": "BLK",
+      "reverse": false
+    },
+    {
+      "id": 11,
+      "key": "TO",
+      "reverse": true
+    }
+  ],
+  "settings": {
+    "scoring_type": "H2H_CATEGORY",
+    "categories": [
+      "FG%",
+      "FT%",
+      "3PM",
+      "PTS",
+      "REB",
+      "AST",
+      "STL",
+      "BLK",
+      "TO"
+    ],
+    "team_count": 12,
+    "roster_slots": [
+      {
+        "slot": "PG",
+        "count": 1
+      },
+      {
+        "slot": "SG",
+        "count": 1
+      },
+      {
+        "slot": "SF",
+        "count": 1
+      },
+      {
+        "slot": "PF",
+        "count": 1
+      },
+      {
+        "slot": "C",
+        "count": 1
+      },
+      {
+        "slot": "UTIL",
+        "count": 2
+      },
+      {
+        "slot": "Скамейка",
+        "count": 3
+      },
+      {
+        "slot": "IR",
+        "count": 3
+      }
+    ],
+    "roster_size": 13,
+    "starters": 7,
+    "lineup_lock": "INDIVIDUAL_GAME",
+    "regular_matchups": 16,
+    "regular_matchup_weeks": 1,
+    "playoff_teams": 8,
+    "playoff_matchup_weeks": 2,
+    "playoff_rounds": [
+      {
+        "name": "1/4 финала",
+        "start": "2027-02-08",
+        "end": "2027-02-28",
+        "weeks": 3
+      },
+      {
+        "name": "1/2 финала",
+        "start": "2027-03-01",
+        "end": "2027-03-14",
+        "weeks": 2
+      },
+      {
+        "name": "Финал",
+        "start": "2027-03-15",
+        "end": "2027-03-28",
+        "weeks": 2
+      }
+    ],
+    "playoff_seeding": "H2H_RECORD",
+    "playoff_reseed": false,
+    "matchup_tie_rule": "NONE",
+    "acquisition_type": "WAIVERS_TRADITIONAL",
+    "acquisitions_per_week": 6,
+    "acquisitions_season_limit": -1,
+    "waiver_hours": 48,
+    "waiver_order_reset": false,
+    "trade_deadline": "2027-02-01T01:00:00Z",
+    "trade_review_hours": 24,
+    "trade_veto_votes": 0,
+    "trade_limit": -1,
+    "keepers": 4,
+    "draft_type": "OFFLINE",
+    "draft_date": "2026-09-29T12:15:00Z",
+    "draft_pick_trading": false
+  }
+}

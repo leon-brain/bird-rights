@@ -1,0 +1,235 @@
+{
+  "season": 2027,
+  "playoff_spots": 8,
+  "has_streak": false,
+  "rows": [
+    {
+      "rank": 1,
+      "team_id": 9,
+      "name": "Lyubasik Titan's",
+      "abbrev": "LT",
+      "manager": "Roman",
+      "wins": 18,
+      "losses": 9,
+      "ties": 0,
+      "pct": ".667",
+      "gb": "—",
+      "matchups": {
+        "w": 3,
+        "l": 0,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 2,
+      "team_id": 12,
+      "name": "EV’s Supertuskers",
+      "abbrev": "LJ6",
+      "manager": "Egor",
+      "wins": 17,
+      "losses": 10,
+      "ties": 0,
+      "pct": ".630",
+      "gb": "1",
+      "matchups": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 3,
+      "team_id": 1,
+      "name": "Far East Dynasty",
+      "abbrev": "FED",
+      "manager": "Leon",
+      "wins": 17,
+      "losses": 10,
+      "ties": 0,
+      "pct": ".630",
+      "gb": "1",
+      "matchups": {
+        "w": 3,
+        "l": 0,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 4,
+      "team_id": 11,
+      "name": "LeBron's Loud Team",
+      "abbrev": "LLT",
+      "manager": "LeBron Sucks",
+      "wins": 15,
+      "losses": 12,
+      "ties": 0,
+      "pct": ".556",
+      "gb": "3",
+      "matchups": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 5,
+      "team_id": 6,
+      "name": "Xz Cho's Exquisite Team",
+      "abbrev": "XET",
+      "manager": "Nikita",
+      "wins": 15,
+      "losses": 12,
+      "ties": 0,
+      "pct": ".556",
+      "gb": "3",
+      "matchups": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 6,
+      "team_id": 4,
+      "name": "African Camp",
+      "abbrev": "ACA",
+      "manager": "Stepan",
+      "wins": 14,
+      "losses": 12,
+      "ties": 1,
+      "pct": ".537",
+      "gb": "3.5",
+      "matchups": {
+        "w": 1,
+        "l": 1,
+        "t": 1
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 7,
+      "team_id": 7,
+      "name": "ZeeBo Grit'n'Grind",
+      "abbrev": "ZBO",
+      "manager": "Max",
+      "wins": 14,
+      "losses": 13,
+      "ties": 0,
+      "pct": ".519",
+      "gb": "4",
+      "matchups": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 8,
+      "team_id": 5,
+      "name": "Na ptich'ih pravah zdes'",
+      "abbrev": "DM",
+      "manager": "David",
+      "wins": 14,
+      "losses": 13,
+      "ties": 0,
+      "pct": ".519",
+      "gb": "4",
+      "matchups": {
+        "w": 2,
+        "l": 1,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": true
+    },
+    {
+      "rank": 9,
+      "team_id": 8,
+      "name": "ChopLand",
+      "abbrev": "CHOP",
+      "manager": "Chop",
+      "wins": 13,
+      "losses": 13,
+      "ties": 1,
+      "pct": ".500",
+      "gb": "4.5",
+      "matchups": {
+        "w": 1,
+        "l": 1,
+        "t": 1
+      },
+      "streak": null,
+      "in_playoff_zone": false
+    },
+    {
+      "rank": 10,
+      "team_id": 3,
+      "name": "Captain Dredd's Pirates",
+      "abbrev": "DRED",
+      "manager": "Captain Dredd",
+      "wins": 11,
+      "losses": 16,
+      "ties": 0,
+      "pct": ".407",
+      "gb": "7",
+      "matchups": {
+        "w": 1,
+        "l": 2,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": false
+    },
+    {
+      "rank": 11,
+      "team_id": 10,
+      "name": "MogTeam",
+      "abbrev": "MOG",
+      "manager": "Kolya",
+      "wins": 7,
+      "losses": 20,
+      "ties": 0,
+      "pct": ".259",
+      "gb": "11",
+      "matchups": {
+        "w": 0,
+        "l": 3,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": false
+    },
+    {
+      "rank": 12,
+      "team_id": 2,
+      "name": "Wiener Wurtschen",
+      "abbrev": "WWS",
+      "manager": "Artem",
+      "wins": 6,
+      "losses": 21,
+      "ties": 0,
+      "pct": ".222",
+      "gb": "12",
+      "matchups": {
+        "w": 0,
+        "l": 3,
+        "t": 0
+      },
+      "streak": null,
+      "in_playoff_zone": false
+    }
+  ]
+}
