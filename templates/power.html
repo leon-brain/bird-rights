@@ -11,6 +11,12 @@
 {{ ui.page_head('Рейтинг силы', 'Кто сильнее на самом деле, если убрать везение с соперниками. Обновляется после каждого матчапа.' if editions else None) }}
 <div class="wrap section">
   {% if editions %}
+  <nav class="subnav power-subnav" aria-label="Разделы рейтинга">
+    {% if power.forecast %}<a href="#forecast">Прогноз</a>{% endif %}
+    {% if trend %}<a href="#trend">Динамика</a>{% endif %}
+    {% if power.profile %}<a href="#profile">Профиль</a>{% endif %}
+    {% if power.schedule %}<a href="#schedule">Расписание</a>{% endif %}
+  </nav>
   <nav class="period-nav" aria-label="Выбор недели рейтинга">
     <button class="period-step" type="button" data-step="-1" aria-label="Предыдущий рейтинг">‹</button>
     <label class="period-select">
@@ -72,6 +78,136 @@
     <li><span><b>Рейтинг</b> — от 0 до 100: {{ power.weights.form }}% форма, {{ power.weights.season }}% сезон, {{ power.weights.result }}% реальный процент побед</span></li>
     <li><span class="cat-rank is-top">1</span> <span>место команды в лиге по категории за сезон; золотом — тройка лучших</span></li>
   </ul>
+
+  {% set fc = power.forecast %}
+  {% if fc %}
+  <section class="power-section" id="forecast" aria-labelledby="forecast-h">
+    <h2 class="section-h" id="forecast-h">Прогноз: {{ fc.label|lower if fc.label.startswith('1/') or fc.label == 'Финал' else fc.label|replace('Матчап', 'матчап') }}</h2>
+    <p class="section-note">{{ ru_range(fc.start, fc.end) }}{% if fc.state == 'current' %}, матчап уже идёт{% endif %}. Прогноз строится по средним показателям команд за {{ fc.based_on }} {{ plural(fc.based_on, 'сыгранный матчап', 'сыгранных матчапа', 'сыгранных матчапов') }}, свежие недели весят больше. Чем меньше сыграно, тем он грубее.</p>
+    <ul class="fc-key">
+      <li><i style="background: var(--navy)"></i> шанс победы команды слева</li>
+      <li><i style="background: var(--gold)"></i> шанс победы команды справа</li>
+      <li>◀ 70% — в категории фаворит левая команда, шанс 70%</li>
+    </ul>
+    <div class="fc-list">
+      {% for m in fc.pairs %}
+      <article class="fc">
+        <div class="fc-head">
+          <span class="fc-team fc-home{% if m.home_win > m.away_win %} is-fav{% endif %}">{{ m.home.name }}</span>
+          <span class="fc-exp" title="Ожидаемый счёт по категориям">{{ '%.1f'|format(m.home_exp) }} : {{ '%.1f'|format(m.away_exp) }}</span>
+          <span class="fc-team fc-away{% if m.away_win > m.home_win %} is-fav{% endif %}">{{ m.away.name }}</span>
+        </div>
+        <div class="fc-bar" role="img" aria-label="Шанс победы: {{ m.home.name }} {{ m.home_win }}%, {{ m.away.name }} {{ m.away_win }}%{% if m.tie %}, ничья {{ m.tie }}%{% endif %}">
+          <i class="seg-home" style="width: {{ m.home_win }}%"></i>{% if m.tie %}<i class="seg-tie" style="width: {{ m.tie }}%"></i>{% endif %}<i class="seg-away" style="width: {{ m.away_win }}%"></i>
+        </div>
+        <div class="fc-pct"><b>{{ m.home_win }}%</b><span>{% if m.tie %}ничья {{ m.tie }}%{% else %}шанс победы{% endif %}</span><b>{{ m.away_win }}%</b></div>
+        <ul class="fc-cats" aria-label="Шансы по категориям">
+          {% for c in m.cats %}
+          {% if c.home_pct >= 55 %}<li title="{{ m.home.abbrev }} {{ c.home }} — {{ m.away.abbrev }} {{ c.away }}"><span class="k">{{ c.key }}</span><span class="v">◀ {{ c.home_pct }}%</span></li>
+          {% elif c.home_pct <= 45 %}<li title="{{ m.home.abbrev }} {{ c.home }} — {{ m.away.abbrev }} {{ c.away }}"><span class="k">{{ c.key }}</span><span class="v">{{ 100 - c.home_pct }}% ▶</span></li>
+          {% else %}<li class="even" title="{{ m.home.abbrev }} {{ c.home }} — {{ m.away.abbrev }} {{ c.away }}"><span class="k">{{ c.key }}</span><span class="v">равны</span></li>{% endif %}
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if trend %}
+  <section class="power-section" id="trend" aria-labelledby="trend-h">
+    <h2 class="section-h" id="trend-h">Динамика рейтинга</h2>
+    <p class="section-note">Рейтинг каждой команды по неделям, шкала у всех графиков общая. Пунктир — середина лиги (50). Точные значения по неделям — в таблице выше, через переключатель недель.</p>
+    <ul class="trend">
+      {% for t in trend %}
+      <li>
+        <div class="trend-top"><span class="trend-name">{{ t.name }}</span><span class="trend-val">{{ '%.1f'|format(t.points[-1].rating) }}</span></div>
+        <svg viewBox="0 0 {{ t.w }} {{ t.h }}" role="img" aria-label="{{ t.name }}: рейтинг {% for p in t.points %}{{ p.rating }}{% if not loop.last %}, {% endif %}{% endfor %}">
+          <line class="mid" x1="0" x2="{{ t.w }}" y1="{{ t.mid }}" y2="{{ t.mid }}"/>
+          {% if t.pts|length > 1 %}<polyline class="ln" points="{{ t.line }}"/>{% endif %}
+          {% for p in t.pts %}<circle class="pt{% if loop.last %} pt-last{% endif %}" cx="{{ p.x }}" cy="{{ p.y }}" r="{{ 5 if loop.last else 4 }}"><title>{{ p.label }}: рейтинг {{ p.rating }}, {{ p.rank }} место</title></circle>{% endfor %}
+        </svg>
+        <div class="trend-foot"><span>{{ t.rank }} место</span><span>{% if t.pts|length > 1 %}{{ ('%+.1f'|format(t.delta))|replace('-', '−') }} с начала{% else %}первая неделя{% endif %}</span></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if power.profile %}
+  <section class="power-section" id="profile" aria-labelledby="profile-h">
+    <h2 class="section-h" id="profile-h">Профиль команд по категориям</h2>
+    <p class="section-note">Средние показатели за игровую неделю (7 дней). Цвет показывает, насколько команда выше или ниже среднего по лиге; для потерь (TO) лучше — меньше.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Профиль по категориям, прокручивается по горизонтали">
+      <table class="standings profile" data-sortable>
+        <thead>
+          <tr>
+            <th class="col-rank sticky-1" scope="col" data-dir="asc"><button class="sort" type="button"><abbr title="Место в рейтинге силы">№</abbr></button></th>
+            <th class="col-team sticky-2" scope="col" data-dir="asc"><button class="sort" type="button">Команда</button></th>
+            {% for c in power.categories %}<th class="num cat-col" scope="col" data-dir="{{ 'asc' if c == 'TO' else 'desc' }}"><button class="sort" type="button">{{ c }}</button></th>{% endfor %}
+            <th scope="col">Сильные</th>
+            <th scope="col">Слабые</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in power.profile %}
+          <tr class="in-zone" data-rank="{{ loop.index }}">
+            <td class="col-rank sticky-1" data-v="{{ r.rank }}"><span class="rank">{{ r.rank }}</span></td>
+            <th class="col-team sticky-2" scope="row" data-t="{{ r.name }}"><span class="team-name">{{ r.name }}</span></th>
+            {% for c in r.cells %}<td class="num cat-col" data-v="{{ c.raw }}"><span class="pv{% if c.z >= 1.2 %} z2{% elif c.z >= 0.5 %} z1{% elif c.z <= -1.2 %} zn2{% elif c.z <= -0.5 %} zn1{% endif %}">{{ c.value }}</span></td>{% endfor %}
+            <td class="tags">{{ r.strong|join(', ') or '—' }}</td>
+            <td class="tags">{{ r.weak|join(', ') or '—' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="col-rank sticky-1"></td>
+            <th class="col-team sticky-2" scope="row">Среднее по лиге</th>
+            {% for c in power.league_avg %}<td class="num cat-col">{{ c.value }}</td>{% endfor %}
+            <td></td><td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="scale-key"><span>Ниже среднего</span><span class="pv zn2">сильно</span><span class="pv zn1">немного</span><span class="pv">средне</span><span class="pv z1">немного</span><span class="pv z2">сильно</span><span>выше среднего</span></p>
+  </section>
+  {% endif %}
+
+  {% if power.schedule %}
+  <section class="power-section" id="schedule" aria-labelledby="schedule-h">
+    <h2 class="section-h" id="schedule-h">Сила расписания</h2>
+    <p class="section-note">Средний рейтинг соперников: уже сыгранных и оставшихся в регулярном сезоне (включая текущий матчап). Чем выше число, тем тяжелее соперники.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Сила расписания, прокручивается по горизонтали">
+      <table class="standings sos" data-sortable>
+        <thead>
+          <tr>
+            <th class="col-rank sticky-1" scope="col" data-dir="asc"><button class="sort" type="button"><abbr title="Место в рейтинге силы">№</abbr></button></th>
+            <th class="col-team sticky-2" scope="col" data-dir="asc"><button class="sort" type="button">Команда</button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button">Сыграно</button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button">Осталось</button></th>
+            <th class="num" scope="col" data-dir="asc"><button class="sort" type="button"><abbr title="Место по тяжести оставшегося расписания: 1 — самое тяжёлое">Тяжесть</abbr></button></th>
+            <th class="num" scope="col" data-dir="desc"><button class="sort" type="button">Матчапов впереди</button></th>
+            <th scope="col">Следующий соперник</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in power.schedule %}
+          <tr class="in-zone" data-rank="{{ loop.index }}">
+            <td class="col-rank sticky-1" data-v="{{ r.rank }}"><span class="rank">{{ r.rank }}</span></td>
+            <th class="col-team sticky-2" scope="row" data-t="{{ r.name }}"><span class="team-name">{{ r.name }}</span></th>
+            <td class="num" data-v="{{ r.played or 0 }}">{{ '%.1f'|format(r.played) if r.played is not none else '—' }}</td>
+            <td class="num strong" data-v="{{ r.ahead or 0 }}">{{ '%.1f'|format(r.ahead) if r.ahead is not none else '—' }}</td>
+            <td class="num" data-v="{{ r.ahead_rank or 99 }}">{{ r.ahead_rank or '—' }}</td>
+            <td class="num" data-v="{{ r.ahead_n }}">{{ r.ahead_n }}</td>
+            <td class="next">{{ r.next or '—' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {% endif %}
 
   <section class="howto" aria-labelledby="howto-h">
     <h2 class="section-h" id="howto-h">Как считается</h2>

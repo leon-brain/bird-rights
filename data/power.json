@@ -2064,5 +2064,1748 @@
         }
       ]
     }
+  ],
+  "forecast": {
+    "period_id": 4,
+    "label": "Матчап 4",
+    "start": "2026-11-09",
+    "end": "2026-11-15",
+    "state": "current",
+    "based_on": 3,
+    "pairs": [
+      {
+        "home": {
+          "team_id": 7,
+          "name": "ZeeBo Grit'n'Grind",
+          "abbrev": "ZBO"
+        },
+        "away": {
+          "team_id": 9,
+          "name": "Lyubasik Titan's",
+          "abbrev": "LT"
+        },
+        "home_exp": 4.2,
+        "away_exp": 4.8,
+        "home_win": 40,
+        "tie": 0,
+        "away_win": 60,
+        "cats": [
+          {
+            "key": "FG%",
+            "home_pct": 75,
+            "home": ".477",
+            "away": ".452"
+          },
+          {
+            "key": "FT%",
+            "home_pct": 29,
+            "home": ".761",
+            "away": ".806"
+          },
+          {
+            "key": "3PM",
+            "home_pct": 17,
+            "home": "50",
+            "away": "66"
+          },
+          {
+            "key": "PTS",
+            "home_pct": 29,
+            "home": "527",
+            "away": "569"
+          },
+          {
+            "key": "REB",
+            "home_pct": 74,
+            "home": "204",
+            "away": "183"
+          },
+          {
+            "key": "AST",
+            "home_pct": 7,
+            "home": "112",
+            "away": "149"
+          },
+          {
+            "key": "STL",
+            "home_pct": 49,
+            "home": "37",
+            "away": "37"
+          },
+          {
+            "key": "BLK",
+            "home_pct": 60,
+            "home": "24",
+            "away": "22"
+          },
+          {
+            "key": "TO",
+            "home_pct": 77,
+            "home": "63",
+            "away": "75"
+          }
+        ]
+      },
+      {
+        "home": {
+          "team_id": 5,
+          "name": "Na ptich'ih pravah zdes'",
+          "abbrev": "DM"
+        },
+        "away": {
+          "team_id": 2,
+          "name": "Wiener Wurtschen",
+          "abbrev": "WWS"
+        },
+        "home_exp": 5.1,
+        "away_exp": 3.9,
+        "home_win": 66,
+        "tie": 0,
+        "away_win": 34,
+        "cats": [
+          {
+            "key": "FG%",
+            "home_pct": 54,
+            "home": ".469",
+            "away": ".465"
+          },
+          {
+            "key": "FT%",
+            "home_pct": 66,
+            "home": ".861",
+            "away": ".826"
+          },
+          {
+            "key": "3PM",
+            "home_pct": 77,
+            "home": "58",
+            "away": "46"
+          },
+          {
+            "key": "PTS",
+            "home_pct": 41,
+            "home": "479",
+            "away": "495"
+          },
+          {
+            "key": "REB",
+            "home_pct": 26,
+            "home": "162",
+            "away": "183"
+          },
+          {
+            "key": "AST",
+            "home_pct": 53,
+            "home": "118",
+            "away": "116"
+          },
+          {
+            "key": "STL",
+            "home_pct": 77,
+            "home": "36",
+            "away": "29"
+          },
+          {
+            "key": "BLK",
+            "home_pct": 40,
+            "home": "18",
+            "away": "20"
+          },
+          {
+            "key": "TO",
+            "home_pct": 71,
+            "home": "59",
+            "away": "68"
+          }
+        ]
+      },
+      {
+        "home": {
+          "team_id": 4,
+          "name": "African Camp",
+          "abbrev": "ACA"
+        },
+        "away": {
+          "team_id": 12,
+          "name": "EV’s Supertuskers",
+          "abbrev": "LJ6"
+        },
+        "home_exp": 3.7,
+        "away_exp": 5.3,
+        "home_win": 28,
+        "tie": 0,
+        "away_win": 72,
+        "cats": [
+          {
+            "key": "FG%",
+            "home_pct": 26,
+            "home": ".458",
+            "away": ".482"
+          },
+          {
+            "key": "FT%",
+            "home_pct": 34,
+            "home": ".783",
+            "away": ".817"
+          },
+          {
+            "key": "3PM",
+            "home_pct": 69,
+            "home": "58",
+            "away": "50"
+          },
+          {
+            "key": "PTS",
+            "home_pct": 46,
+            "home": "515",
+            "away": "522"
+          },
+          {
+            "key": "REB",
+            "home_pct": 33,
+            "home": "158",
+            "away": "172"
+          },
+          {
+            "key": "AST",
+            "home_pct": 70,
+            "home": "126",
+            "away": "113"
+          },
+          {
+            "key": "STL",
+            "home_pct": 44,
+            "home": "25",
+            "away": "26"
+          },
+          {
+            "key": "BLK",
+            "home_pct": 15,
+            "home": "17",
+            "away": "25"
+          },
+          {
+            "key": "TO",
+            "home_pct": 33,
+            "home": "62",
+            "away": "54"
+          }
+        ]
+      },
+      {
+        "home": {
+          "team_id": 8,
+          "name": "ChopLand",
+          "abbrev": "CHOP"
+        },
+        "away": {
+          "team_id": 1,
+          "name": "Far East Dynasty",
+          "abbrev": "FED"
+        },
+        "home_exp": 3.7,
+        "away_exp": 5.3,
+        "home_win": 27,
+        "tie": 0,
+        "away_win": 73,
+        "cats": [
+          {
+            "key": "FG%",
+            "home_pct": 35,
+            "home": ".456",
+            "away": ".470"
+          },
+          {
+            "key": "FT%",
+            "home_pct": 27,
+            "home": ".753",
+            "away": ".803"
+          },
+          {
+            "key": "3PM",
+            "home_pct": 3,
+            "home": "34",
+            "away": "70"
+          },
+          {
+            "key": "PTS",
+            "home_pct": 34,
+            "home": "506",
+            "away": "537"
+          },
+          {
+            "key": "REB",
+            "home_pct": 35,
+            "home": "201",
+            "away": "214"
+          },
+          {
+            "key": "AST",
+            "home_pct": 47,
+            "home": "132",
+            "away": "133"
+          },
+          {
+            "key": "STL",
+            "home_pct": 37,
+            "home": "33",
+            "away": "36"
+          },
+          {
+            "key": "BLK",
+            "home_pct": 90,
+            "home": "19",
+            "away": "9"
+          },
+          {
+            "key": "TO",
+            "home_pct": 64,
+            "home": "68",
+            "away": "74"
+          }
+        ]
+      },
+      {
+        "home": {
+          "team_id": 11,
+          "name": "LeBron's Loud Team",
+          "abbrev": "LLT"
+        },
+        "away": {
+          "team_id": 3,
+          "name": "Captain Dredd's Pirates",
+          "abbrev": "DRED"
+        },
+        "home_exp": 5.4,
+        "away_exp": 3.6,
+        "home_win": 80,
+        "tie": 0,
+        "away_win": 20,
+        "cats": [
+          {
+            "key": "FG%",
+            "home_pct": 51,
+            "home": ".464",
+            "away": ".463"
+          },
+          {
+            "key": "FT%",
+            "home_pct": 63,
+            "home": ".816",
+            "away": ".789"
+          },
+          {
+            "key": "3PM",
+            "home_pct": 97,
+            "home": "73",
+            "away": "35"
+          },
+          {
+            "key": "PTS",
+            "home_pct": 90,
+            "home": "556",
+            "away": "460"
+          },
+          {
+            "key": "REB",
+            "home_pct": 15,
+            "home": "158",
+            "away": "192"
+          },
+          {
+            "key": "AST",
+            "home_pct": 97,
+            "home": "140",
+            "away": "89"
+          },
+          {
+            "key": "STL",
+            "home_pct": 54,
+            "home": "35",
+            "away": "34"
+          },
+          {
+            "key": "BLK",
+            "home_pct": 73,
+            "home": "25",
+            "away": "20"
+          },
+          {
+            "key": "TO",
+            "home_pct": 4,
+            "home": "88",
+            "away": "58"
+          }
+        ]
+      },
+      {
+        "home": {
+          "team_id": 10,
+          "name": "MogTeam",
+          "abbrev": "MOG"
+        },
+        "away": {
+          "team_id": 6,
+          "name": "Xz Cho's Exquisite Team",
+          "abbrev": "XET"
+        },
+        "home_exp": 3.5,
+        "away_exp": 5.5,
+        "home_win": 18,
+        "tie": 0,
+        "away_win": 82,
+        "cats": [
+          {
+            "key": "FG%",
+            "home_pct": 85,
+            "home": ".479",
+            "away": ".440"
+          },
+          {
+            "key": "FT%",
+            "home_pct": 68,
+            "home": ".829",
+            "away": ".790"
+          },
+          {
+            "key": "3PM",
+            "home_pct": 27,
+            "home": "49",
+            "away": "58"
+          },
+          {
+            "key": "PTS",
+            "home_pct": 3,
+            "home": "503",
+            "away": "654"
+          },
+          {
+            "key": "REB",
+            "home_pct": 5,
+            "home": "144",
+            "away": "196"
+          },
+          {
+            "key": "AST",
+            "home_pct": 41,
+            "home": "125",
+            "away": "131"
+          },
+          {
+            "key": "STL",
+            "home_pct": 21,
+            "home": "31",
+            "away": "39"
+          },
+          {
+            "key": "BLK",
+            "home_pct": 15,
+            "home": "12",
+            "away": "20"
+          },
+          {
+            "key": "TO",
+            "home_pct": 84,
+            "home": "65",
+            "away": "81"
+          }
+        ]
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "rank": 1,
+      "team_id": 9,
+      "name": "Lyubasik Titan's",
+      "played": 45.8,
+      "played_n": 3,
+      "ahead": 48.7,
+      "ahead_n": 13,
+      "next": "African Camp",
+      "ahead_rank": 10
+    },
+    {
+      "rank": 2,
+      "team_id": 12,
+      "name": "EV’s Supertuskers",
+      "played": 53.0,
+      "played_n": 3,
+      "ahead": 49.1,
+      "ahead_n": 13,
+      "next": "LeBron's Loud Team",
+      "ahead_rank": 9
+    },
+    {
+      "rank": 3,
+      "team_id": 1,
+      "name": "Far East Dynasty",
+      "played": 48.8,
+      "played_n": 3,
+      "ahead": 48.1,
+      "ahead_n": 13,
+      "next": "MogTeam",
+      "ahead_rank": 11
+    },
+    {
+      "rank": 4,
+      "team_id": 6,
+      "name": "Xz Cho's Exquisite Team",
+      "played": 44.5,
+      "played_n": 3,
+      "ahead": 47.9,
+      "ahead_n": 13,
+      "next": "Captain Dredd's Pirates",
+      "ahead_rank": 12
+    },
+    {
+      "rank": 5,
+      "team_id": 7,
+      "name": "ZeeBo Grit'n'Grind",
+      "played": 51.5,
+      "played_n": 3,
+      "ahead": 50.9,
+      "ahead_n": 13,
+      "next": "Na ptich'ih pravah zdes'",
+      "ahead_rank": 4
+    },
+    {
+      "rank": 6,
+      "team_id": 11,
+      "name": "LeBron's Loud Team",
+      "played": 44.5,
+      "played_n": 3,
+      "ahead": 49.5,
+      "ahead_n": 13,
+      "next": "EV’s Supertuskers",
+      "ahead_rank": 7
+    },
+    {
+      "rank": 7,
+      "team_id": 5,
+      "name": "Na ptich'ih pravah zdes'",
+      "played": 55.3,
+      "played_n": 3,
+      "ahead": 49.4,
+      "ahead_n": 13,
+      "next": "ZeeBo Grit'n'Grind",
+      "ahead_rank": 8
+    },
+    {
+      "rank": 8,
+      "team_id": 4,
+      "name": "African Camp",
+      "played": 40.2,
+      "played_n": 3,
+      "ahead": 52.4,
+      "ahead_n": 13,
+      "next": "Lyubasik Titan's",
+      "ahead_rank": 1
+    },
+    {
+      "rank": 9,
+      "team_id": 8,
+      "name": "ChopLand",
+      "played": 50.9,
+      "played_n": 3,
+      "ahead": 50.2,
+      "ahead_n": 13,
+      "next": "Wiener Wurtschen",
+      "ahead_rank": 6
+    },
+    {
+      "rank": 10,
+      "team_id": 10,
+      "name": "MogTeam",
+      "played": 54.0,
+      "played_n": 3,
+      "ahead": 51.7,
+      "ahead_n": 13,
+      "next": "Far East Dynasty",
+      "ahead_rank": 2
+    },
+    {
+      "rank": 11,
+      "team_id": 2,
+      "name": "Wiener Wurtschen",
+      "played": 55.6,
+      "played_n": 3,
+      "ahead": 50.3,
+      "ahead_n": 13,
+      "next": "ChopLand",
+      "ahead_rank": 5
+    },
+    {
+      "rank": 12,
+      "team_id": 3,
+      "name": "Captain Dredd's Pirates",
+      "played": 55.6,
+      "played_n": 3,
+      "ahead": 51.6,
+      "ahead_n": 13,
+      "next": "Xz Cho's Exquisite Team",
+      "ahead_rank": 3
+    }
+  ],
+  "profile": [
+    {
+      "rank": 1,
+      "team_id": 9,
+      "name": "Lyubasik Titan's",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".448",
+          "raw": 0.4476,
+          "z": -1.34
+        },
+        {
+          "key": "FT%",
+          "value": ".808",
+          "raw": 0.808,
+          "z": 0.22
+        },
+        {
+          "key": "3PM",
+          "value": "65",
+          "raw": 65.1667,
+          "z": 0.97
+        },
+        {
+          "key": "PTS",
+          "value": "572",
+          "raw": 572.4444,
+          "z": 0.88
+        },
+        {
+          "key": "REB",
+          "value": "183",
+          "raw": 183.2222,
+          "z": 0.08
+        },
+        {
+          "key": "AST",
+          "value": "149",
+          "raw": 148.7778,
+          "z": 1.67
+        },
+        {
+          "key": "STL",
+          "value": "37",
+          "raw": 37.1667,
+          "z": 0.79
+        },
+        {
+          "key": "BLK",
+          "value": "22",
+          "raw": 22.0556,
+          "z": 0.56
+        },
+        {
+          "key": "TO",
+          "value": "77",
+          "raw": 76.9444,
+          "z": -0.84
+        }
+      ],
+      "strong": [
+        "AST",
+        "3PM",
+        "PTS"
+      ],
+      "weak": [
+        "FG%",
+        "TO"
+      ]
+    },
+    {
+      "rank": 2,
+      "team_id": 12,
+      "name": "EV’s Supertuskers",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".481",
+          "raw": 0.4807,
+          "z": 1.31
+        },
+        {
+          "key": "FT%",
+          "value": ".814",
+          "raw": 0.8144,
+          "z": 0.43
+        },
+        {
+          "key": "3PM",
+          "value": "51",
+          "raw": 50.9444,
+          "z": -0.24
+        },
+        {
+          "key": "PTS",
+          "value": "531",
+          "raw": 531.1111,
+          "z": 0.05
+        },
+        {
+          "key": "REB",
+          "value": "173",
+          "raw": 173.2222,
+          "z": -0.38
+        },
+        {
+          "key": "AST",
+          "value": "116",
+          "raw": 116.3333,
+          "z": -0.5
+        },
+        {
+          "key": "STL",
+          "value": "28",
+          "raw": 27.5556,
+          "z": -1.4
+        },
+        {
+          "key": "BLK",
+          "value": "25",
+          "raw": 24.8333,
+          "z": 1.16
+        },
+        {
+          "key": "TO",
+          "value": "55",
+          "raw": 55.2778,
+          "z": 1.35
+        }
+      ],
+      "strong": [
+        "TO",
+        "FG%",
+        "BLK"
+      ],
+      "weak": [
+        "STL"
+      ]
+    },
+    {
+      "rank": 3,
+      "team_id": 1,
+      "name": "Far East Dynasty",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".472",
+          "raw": 0.4718,
+          "z": 0.6
+        },
+        {
+          "key": "FT%",
+          "value": ".803",
+          "raw": 0.8034,
+          "z": 0.07
+        },
+        {
+          "key": "3PM",
+          "value": "69",
+          "raw": 68.7222,
+          "z": 1.27
+        },
+        {
+          "key": "PTS",
+          "value": "531",
+          "raw": 531.3333,
+          "z": 0.06
+        },
+        {
+          "key": "REB",
+          "value": "218",
+          "raw": 218.5,
+          "z": 1.69
+        },
+        {
+          "key": "AST",
+          "value": "133",
+          "raw": 132.6667,
+          "z": 0.59
+        },
+        {
+          "key": "STL",
+          "value": "37",
+          "raw": 36.8333,
+          "z": 0.71
+        },
+        {
+          "key": "BLK",
+          "value": "10",
+          "raw": 9.6667,
+          "z": -2.14
+        },
+        {
+          "key": "TO",
+          "value": "75",
+          "raw": 74.8333,
+          "z": -0.63
+        }
+      ],
+      "strong": [
+        "REB",
+        "3PM"
+      ],
+      "weak": [
+        "BLK"
+      ]
+    },
+    {
+      "rank": 4,
+      "team_id": 6,
+      "name": "Xz Cho's Exquisite Team",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".440",
+          "raw": 0.4395,
+          "z": -1.98
+        },
+        {
+          "key": "FT%",
+          "value": ".788",
+          "raw": 0.7876,
+          "z": -0.44
+        },
+        {
+          "key": "3PM",
+          "value": "59",
+          "raw": 59.1111,
+          "z": 0.45
+        },
+        {
+          "key": "PTS",
+          "value": "657",
+          "raw": 656.5556,
+          "z": 2.58
+        },
+        {
+          "key": "REB",
+          "value": "197",
+          "raw": 197.1667,
+          "z": 0.71
+        },
+        {
+          "key": "AST",
+          "value": "130",
+          "raw": 130.0,
+          "z": 0.41
+        },
+        {
+          "key": "STL",
+          "value": "39",
+          "raw": 39.2778,
+          "z": 1.27
+        },
+        {
+          "key": "BLK",
+          "value": "21",
+          "raw": 20.9444,
+          "z": 0.32
+        },
+        {
+          "key": "TO",
+          "value": "82",
+          "raw": 82.5,
+          "z": -1.4
+        }
+      ],
+      "strong": [
+        "PTS",
+        "STL"
+      ],
+      "weak": [
+        "FG%",
+        "TO"
+      ]
+    },
+    {
+      "rank": 5,
+      "team_id": 7,
+      "name": "ZeeBo Grit'n'Grind",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".477",
+          "raw": 0.4772,
+          "z": 1.03
+        },
+        {
+          "key": "FT%",
+          "value": ".758",
+          "raw": 0.758,
+          "z": -1.39
+        },
+        {
+          "key": "3PM",
+          "value": "51",
+          "raw": 50.6111,
+          "z": -0.27
+        },
+        {
+          "key": "PTS",
+          "value": "526",
+          "raw": 526.3333,
+          "z": -0.05
+        },
+        {
+          "key": "REB",
+          "value": "204",
+          "raw": 203.6667,
+          "z": 1.01
+        },
+        {
+          "key": "AST",
+          "value": "112",
+          "raw": 111.8333,
+          "z": -0.8
+        },
+        {
+          "key": "STL",
+          "value": "37",
+          "raw": 37.2778,
+          "z": 0.81
+        },
+        {
+          "key": "BLK",
+          "value": "24",
+          "raw": 24.3889,
+          "z": 1.07
+        },
+        {
+          "key": "TO",
+          "value": "65",
+          "raw": 64.8333,
+          "z": 0.38
+        }
+      ],
+      "strong": [
+        "BLK",
+        "FG%",
+        "REB"
+      ],
+      "weak": [
+        "FT%",
+        "AST"
+      ]
+    },
+    {
+      "rank": 6,
+      "team_id": 11,
+      "name": "LeBron's Loud Team",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".461",
+          "raw": 0.4612,
+          "z": -0.25
+        },
+        {
+          "key": "FT%",
+          "value": ".818",
+          "raw": 0.8175,
+          "z": 0.53
+        },
+        {
+          "key": "3PM",
+          "value": "71",
+          "raw": 71.0,
+          "z": 1.46
+        },
+        {
+          "key": "PTS",
+          "value": "548",
+          "raw": 548.2778,
+          "z": 0.4
+        },
+        {
+          "key": "REB",
+          "value": "157",
+          "raw": 156.6667,
+          "z": -1.14
+        },
+        {
+          "key": "AST",
+          "value": "139",
+          "raw": 139.4444,
+          "z": 1.05
+        },
+        {
+          "key": "STL",
+          "value": "35",
+          "raw": 35.0556,
+          "z": 0.31
+        },
+        {
+          "key": "BLK",
+          "value": "24",
+          "raw": 24.1667,
+          "z": 1.02
+        },
+        {
+          "key": "TO",
+          "value": "87",
+          "raw": 86.8889,
+          "z": -1.85
+        }
+      ],
+      "strong": [
+        "3PM",
+        "AST",
+        "BLK"
+      ],
+      "weak": [
+        "TO",
+        "REB"
+      ]
+    },
+    {
+      "rank": 7,
+      "team_id": 5,
+      "name": "Na ptich'ih pravah zdes'",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".468",
+          "raw": 0.4681,
+          "z": 0.3
+        },
+        {
+          "key": "FT%",
+          "value": ".863",
+          "raw": 0.8634,
+          "z": 2.01
+        },
+        {
+          "key": "3PM",
+          "value": "57",
+          "raw": 57.0,
+          "z": 0.27
+        },
+        {
+          "key": "PTS",
+          "value": "476",
+          "raw": 475.9444,
+          "z": -1.06
+        },
+        {
+          "key": "REB",
+          "value": "163",
+          "raw": 162.9444,
+          "z": -0.85
+        },
+        {
+          "key": "AST",
+          "value": "117",
+          "raw": 116.7222,
+          "z": -0.48
+        },
+        {
+          "key": "STL",
+          "value": "36",
+          "raw": 36.3889,
+          "z": 0.61
+        },
+        {
+          "key": "BLK",
+          "value": "19",
+          "raw": 19.3333,
+          "z": -0.04
+        },
+        {
+          "key": "TO",
+          "value": "59",
+          "raw": 58.8889,
+          "z": 0.99
+        }
+      ],
+      "strong": [
+        "FT%",
+        "TO"
+      ],
+      "weak": [
+        "PTS",
+        "REB"
+      ]
+    },
+    {
+      "rank": 8,
+      "team_id": 4,
+      "name": "African Camp",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".461",
+          "raw": 0.461,
+          "z": -0.26
+        },
+        {
+          "key": "FT%",
+          "value": ".779",
+          "raw": 0.7788,
+          "z": -0.72
+        },
+        {
+          "key": "3PM",
+          "value": "58",
+          "raw": 58.2778,
+          "z": 0.38
+        },
+        {
+          "key": "PTS",
+          "value": "515",
+          "raw": 515.2778,
+          "z": -0.27
+        },
+        {
+          "key": "REB",
+          "value": "158",
+          "raw": 158.3333,
+          "z": -1.06
+        },
+        {
+          "key": "AST",
+          "value": "125",
+          "raw": 125.1667,
+          "z": 0.09
+        },
+        {
+          "key": "STL",
+          "value": "25",
+          "raw": 25.3889,
+          "z": -1.9
+        },
+        {
+          "key": "BLK",
+          "value": "18",
+          "raw": 17.5,
+          "z": -0.44
+        },
+        {
+          "key": "TO",
+          "value": "61",
+          "raw": 60.8889,
+          "z": 0.78
+        }
+      ],
+      "strong": [],
+      "weak": [
+        "STL",
+        "REB"
+      ]
+    },
+    {
+      "rank": 9,
+      "team_id": 8,
+      "name": "ChopLand",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".458",
+          "raw": 0.4579,
+          "z": -0.51
+        },
+        {
+          "key": "FT%",
+          "value": ".749",
+          "raw": 0.7491,
+          "z": -1.68
+        },
+        {
+          "key": "3PM",
+          "value": "34",
+          "raw": 33.9444,
+          "z": -1.68
+        },
+        {
+          "key": "PTS",
+          "value": "513",
+          "raw": 512.5556,
+          "z": -0.32
+        },
+        {
+          "key": "REB",
+          "value": "197",
+          "raw": 197.3889,
+          "z": 0.72
+        },
+        {
+          "key": "AST",
+          "value": "131",
+          "raw": 130.7222,
+          "z": 0.46
+        },
+        {
+          "key": "STL",
+          "value": "34",
+          "raw": 33.9444,
+          "z": 0.05
+        },
+        {
+          "key": "BLK",
+          "value": "18",
+          "raw": 18.1667,
+          "z": -0.29
+        },
+        {
+          "key": "TO",
+          "value": "68",
+          "raw": 68.1667,
+          "z": 0.05
+        }
+      ],
+      "strong": [],
+      "weak": [
+        "FT%",
+        "3PM"
+      ]
+    },
+    {
+      "rank": 10,
+      "team_id": 10,
+      "name": "MogTeam",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".480",
+          "raw": 0.4799,
+          "z": 1.25
+        },
+        {
+          "key": "FT%",
+          "value": ".818",
+          "raw": 0.8175,
+          "z": 0.53
+        },
+        {
+          "key": "3PM",
+          "value": "48",
+          "raw": 48.0,
+          "z": -0.49
+        },
+        {
+          "key": "PTS",
+          "value": "505",
+          "raw": 504.7778,
+          "z": -0.48
+        },
+        {
+          "key": "REB",
+          "value": "147",
+          "raw": 147.2222,
+          "z": -1.57
+        },
+        {
+          "key": "AST",
+          "value": "127",
+          "raw": 126.9444,
+          "z": 0.21
+        },
+        {
+          "key": "STL",
+          "value": "31",
+          "raw": 30.9444,
+          "z": -0.63
+        },
+        {
+          "key": "BLK",
+          "value": "13",
+          "raw": 12.7778,
+          "z": -1.46
+        },
+        {
+          "key": "TO",
+          "value": "67",
+          "raw": 66.6667,
+          "z": 0.2
+        }
+      ],
+      "strong": [
+        "FG%"
+      ],
+      "weak": [
+        "REB",
+        "BLK"
+      ]
+    },
+    {
+      "rank": 11,
+      "team_id": 2,
+      "name": "Wiener Wurtschen",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".466",
+          "raw": 0.466,
+          "z": 0.14
+        },
+        {
+          "key": "FT%",
+          "value": ".824",
+          "raw": 0.8243,
+          "z": 0.75
+        },
+        {
+          "key": "3PM",
+          "value": "47",
+          "raw": 46.9444,
+          "z": -0.58
+        },
+        {
+          "key": "PTS",
+          "value": "503",
+          "raw": 502.6111,
+          "z": -0.52
+        },
+        {
+          "key": "REB",
+          "value": "186",
+          "raw": 186.2222,
+          "z": 0.21
+        },
+        {
+          "key": "AST",
+          "value": "117",
+          "raw": 116.7778,
+          "z": -0.47
+        },
+        {
+          "key": "STL",
+          "value": "29",
+          "raw": 29.2778,
+          "z": -1.01
+        },
+        {
+          "key": "BLK",
+          "value": "20",
+          "raw": 19.6667,
+          "z": 0.04
+        },
+        {
+          "key": "TO",
+          "value": "69",
+          "raw": 68.5556,
+          "z": 0.01
+        }
+      ],
+      "strong": [],
+      "weak": [
+        "STL"
+      ]
+    },
+    {
+      "rank": 12,
+      "team_id": 3,
+      "name": "Captain Dredd's Pirates",
+      "cells": [
+        {
+          "key": "FG%",
+          "value": ".461",
+          "raw": 0.4606,
+          "z": -0.29
+        },
+        {
+          "key": "FT%",
+          "value": ".791",
+          "raw": 0.7914,
+          "z": -0.31
+        },
+        {
+          "key": "3PM",
+          "value": "36",
+          "raw": 35.6111,
+          "z": -1.54
+        },
+        {
+          "key": "PTS",
+          "value": "466",
+          "raw": 465.6667,
+          "z": -1.27
+        },
+        {
+          "key": "REB",
+          "value": "194",
+          "raw": 194.1111,
+          "z": 0.57
+        },
+        {
+          "key": "AST",
+          "value": "90",
+          "raw": 90.5,
+          "z": -2.23
+        },
+        {
+          "key": "STL",
+          "value": "35",
+          "raw": 35.3889,
+          "z": 0.38
+        },
+        {
+          "key": "BLK",
+          "value": "20",
+          "raw": 20.4444,
+          "z": 0.21
+        },
+        {
+          "key": "TO",
+          "value": "59",
+          "raw": 59.1667,
+          "z": 0.96
+        }
+      ],
+      "strong": [
+        "TO"
+      ],
+      "weak": [
+        "AST",
+        "3PM",
+        "PTS"
+      ]
+    }
+  ],
+  "league_avg": [
+    {
+      "key": "FG%",
+      "value": ".464"
+    },
+    {
+      "key": "FT%",
+      "value": ".801"
+    },
+    {
+      "key": "3PM",
+      "value": "54"
+    },
+    {
+      "key": "PTS",
+      "value": "529"
+    },
+    {
+      "key": "REB",
+      "value": "182"
+    },
+    {
+      "key": "AST",
+      "value": "124"
+    },
+    {
+      "key": "STL",
+      "value": "34"
+    },
+    {
+      "key": "BLK",
+      "value": "19"
+    },
+    {
+      "key": "TO",
+      "value": "69"
+    }
+  ],
+  "trend": [
+    {
+      "team_id": 9,
+      "name": "Lyubasik Titan's",
+      "rank": 1,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 57.2,
+          "rank": 3
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 65.2,
+          "rank": 1
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 64.9,
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "team_id": 12,
+      "name": "EV’s Supertuskers",
+      "rank": 2,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 62.8,
+          "rank": 2
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 64.6,
+          "rank": 2
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 59.1,
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "team_id": 1,
+      "name": "Far East Dynasty",
+      "rank": 3,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 50.0,
+          "rank": 5
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 56.8,
+          "rank": 4
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 56.0,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "team_id": 6,
+      "name": "Xz Cho's Exquisite Team",
+      "rank": 4,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 64.1,
+          "rank": 1
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 57.8,
+          "rank": 3
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 55.6,
+          "rank": 4
+        }
+      ]
+    },
+    {
+      "team_id": 7,
+      "name": "ZeeBo Grit'n'Grind",
+      "rank": 5,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 55.2,
+          "rank": 4
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 48.4,
+          "rank": 6
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 55.2,
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "team_id": 11,
+      "name": "LeBron's Loud Team",
+      "rank": 6,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 49.2,
+          "rank": 6
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 44.3,
+          "rank": 8
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 54.4,
+          "rank": 6
+        }
+      ]
+    },
+    {
+      "team_id": 5,
+      "name": "Na ptich'ih pravah zdes'",
+      "rank": 7,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 46.1,
+          "rank": 9
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 56.6,
+          "rank": 5
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 51.7,
+          "rank": 7
+        }
+      ]
+    },
+    {
+      "team_id": 4,
+      "name": "African Camp",
+      "rank": 8,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 44.4,
+          "rank": 10
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 42.0,
+          "rank": 11
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 42.8,
+          "rank": 8
+        }
+      ]
+    },
+    {
+      "team_id": 8,
+      "name": "ChopLand",
+      "rank": 9,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 41.0,
+          "rank": 11
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 42.4,
+          "rank": 9
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 42.3,
+          "rank": 9
+        }
+      ]
+    },
+    {
+      "team_id": 10,
+      "name": "MogTeam",
+      "rank": 10,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 35.1,
+          "rank": 12
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 35.4,
+          "rank": 12
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 39.6,
+          "rank": 10
+        }
+      ]
+    },
+    {
+      "team_id": 2,
+      "name": "Wiener Wurtschen",
+      "rank": 11,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 48.8,
+          "rank": 7
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 44.3,
+          "rank": 7
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 39.4,
+          "rank": 11
+        }
+      ]
+    },
+    {
+      "team_id": 3,
+      "name": "Captain Dredd's Pirates",
+      "rank": 12,
+      "points": [
+        {
+          "period_id": 1,
+          "label": "Матчап 1",
+          "rating": 46.2,
+          "rank": 8
+        },
+        {
+          "period_id": 2,
+          "label": "Матчап 2",
+          "rating": 42.3,
+          "rank": 10
+        },
+        {
+          "period_id": 3,
+          "label": "Матчап 3",
+          "rating": 38.8,
+          "rank": 12
+        }
+      ]
+    }
   ]
 }

@@ -197,6 +197,36 @@ def espn_settings_groups(league: dict) -> list:
     ]
 
 
+# ------------------------------------------------------------------ графики динамики рейтинга
+
+def trend_charts(trend: list) -> list:
+    """Мини-графики рейтинга по неделям: общая шкала для всех команд, координаты для SVG."""
+    values = [p["rating"] for t in trend for p in t["points"]]
+    if not values:
+        return []
+    w, h, pad_x, pad_y = 200, 64, 8, 8
+    lo, hi = min(values + [50]) - 3, max(values + [50]) + 3
+    n = max(len(t["points"]) for t in trend)
+
+    def x(i):
+        return round(pad_x + (w - 2 * pad_x) * (i / (n - 1) if n > 1 else 0.5), 1)
+
+    def y(v):
+        return round(pad_y + (h - 2 * pad_y) * (1 - (v - lo) / (hi - lo)), 1)
+
+    out = []
+    for t in sorted(trend, key=lambda t: t["rank"]):
+        pts = [{"x": x(i), "y": y(p["rating"]), **p} for i, p in enumerate(t["points"])]
+        first, last = t["points"][0], t["points"][-1]
+        out.append({
+            **t, "w": w, "h": h, "mid": y(50), "pts": pts,
+            "line": " ".join(f"{p['x']},{p['y']}" for p in pts),
+            "delta": round(last["rating"] - first["rating"], 1),
+            "first_label": first["label"], "last_label": last["label"],
+        })
+    return out
+
+
 # ------------------------------------------------------------------ сборка
 
 def build(data_dir: Path, out: Path) -> None:
@@ -257,6 +287,7 @@ def build(data_dir: Path, out: Path) -> None:
         "seasons": seasons,
         "power": power,
         "editions": power.get("editions", []),
+        "trend": trend_charts(power.get("trend", [])),
         "next_champion_year": season or (seasons[0]["season"] + 1 if seasons else date.today().year + 1),
         "charter": charter,
         "espn_groups": espn_settings_groups(league),
