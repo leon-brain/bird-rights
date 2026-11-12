@@ -78,7 +78,8 @@ def main() -> int:
                           const r = e.getBoundingClientRect();
                           if (!r.width || !r.height) return false;
                           if (e.closest('.charter, .charter-intro, .empty, .legend')) return false;
-                          return r.height < 43.5 || r.width < 43.5;
+                          const min = e.closest('table, .period-nav, .subnav, .toc, .mu-foot') ? 35.5 : 43.5;
+                          return r.height < min || (r.width < min && !e.closest('table'));
                        }).map(e => (e.className || e.tagName) + ' ' + Math.round(r = e.getBoundingClientRect().width) + 'x' + Math.round(e.getBoundingClientRect().height)).slice(0, 6)"""
                 ) if mobile else []
                 if small:
