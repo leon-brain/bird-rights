@@ -1787,90 +1787,90 @@
             "team_id": 7,
             "name": "ZeeBo Grit'n'Grind",
             "abbrev": "ZBO",
-            "wins": 2,
-            "losses": 7,
+            "wins": 3,
+            "losses": 6,
             "ties": 0
           },
           "away": {
             "team_id": 9,
             "name": "Lyubasik Titan's",
             "abbrev": "LT",
-            "wins": 7,
-            "losses": 2,
+            "wins": 6,
+            "losses": 3,
             "ties": 0
           },
           "winner": null,
           "cats": [
             {
               "key": "FG%",
-              "home": ".471",
-              "away": ".461",
-              "home_raw": 0.47093023,
-              "away_raw": 0.46062992,
+              "home": ".483",
+              "away": ".459",
+              "home_raw": 0.4826087,
+              "away_raw": 0.45928339,
               "winner": "home"
             },
             {
               "key": "FT%",
-              "home": ".758",
-              "away": ".840",
-              "home_raw": 0.75757576,
-              "away_raw": 0.83950617,
+              "home": ".804",
+              "away": ".879",
+              "home_raw": 0.80357143,
+              "away_raw": 0.87850467,
               "winner": "away"
             },
             {
               "key": "3PM",
-              "home": "15",
-              "away": "41",
-              "home_raw": 15.0,
-              "away_raw": 41.0,
+              "home": "21",
+              "away": "45",
+              "home_raw": 21.0,
+              "away_raw": 45.0,
               "winner": "away"
             },
             {
               "key": "PTS",
-              "home": "202",
-              "away": "343",
-              "home_raw": 202.0,
-              "away_raw": 343.0,
+              "home": "288",
+              "away": "421",
+              "home_raw": 288.0,
+              "away_raw": 421.0,
               "winner": "away"
             },
             {
               "key": "REB",
-              "home": "92",
-              "away": "98",
-              "home_raw": 92.0,
-              "away_raw": 98.0,
+              "home": "107",
+              "away": "121",
+              "home_raw": 107.0,
+              "away_raw": 121.0,
               "winner": "away"
             },
             {
               "key": "AST",
-              "home": "54",
-              "away": "59",
-              "home_raw": 54.0,
-              "away_raw": 59.0,
+              "home": "69",
+              "away": "80",
+              "home_raw": 69.0,
+              "away_raw": 80.0,
               "winner": "away"
             },
             {
               "key": "STL",
-              "home": "13",
-              "away": "16",
-              "home_raw": 13.0,
-              "away_raw": 16.0,
+              "home": "17",
+              "away": "18",
+              "home_raw": 17.0,
+              "away_raw": 18.0,
               "winner": "away"
             },
             {
               "key": "BLK",
-              "home": "12",
+              "home": "15",
               "away": "13",
-              "home_raw": 12.0,
+              "home_raw": 15.0,
               "away_raw": 13.0,
-              "winner": "away"
+              "winner": "home"
             },
             {
               "key": "TO",
-              "home": "28",
-              "away": "29",
-              "home_raw": 28.0,
-              "away_raw": 29.0,
+              "home": "33",
+              "away": "35",
+              "home_raw": 33.0,
+              "away_raw": 35.0,
               "winner": "home"
             }
           ]
@@ -1884,89 +1884,89 @@
             "name": "Na ptich'ih pravah zdes'",
             "abbrev": "DM",
             "wins": 5,
-            "losses": 3,
-            "ties": 1
+            "losses": 4,
+            "ties": 0
           },
           "away": {
             "team_id": 2,
             "name": "Wiener Wurtschen",
             "abbrev": "WWS",
-            "wins": 3,
+            "wins": 4,
             "losses": 5,
-            "ties": 1
+            "ties": 0
           },
           "winner": null,
           "cats": [
             {
               "key": "FG%",
-              "home": ".503",
-              "away": ".497",
-              "home_raw": 0.50310559,
-              "away_raw": 0.49673203,
-              "winner": "home"
+              "home": ".474",
+              "away": ".480",
+              "home_raw": 0.47395833,
+              "away_raw": 0.48044693,
+              "winner": "away"
             },
             {
               "key": "FT%",
-              "home": ".902",
-              "away": ".778",
-              "home_raw": 0.90243902,
-              "away_raw": 0.77777778,
+              "home": ".889",
+              "away": ".767",
+              "home_raw": 0.88888889,
+              "away_raw": 0.76666667,
               "winner": "home"
             },
             {
               "key": "3PM",
-              "home": "37",
-              "away": "14",
-              "home_raw": 37.0,
-              "away_raw": 14.0,
+              "home": "41",
+              "away": "19",
+              "home_raw": 41.0,
+              "away_raw": 19.0,
               "winner": "home"
             },
             {
               "key": "PTS",
-              "home": "236",
-              "away": "208",
-              "home_raw": 236.0,
-              "away_raw": 208.0,
+              "home": "263",
+              "away": "237",
+              "home_raw": 263.0,
+              "away_raw": 237.0,
               "winner": "home"
             },
             {
               "key": "REB",
-              "home": "79",
-              "away": "90",
-              "home_raw": 79.0,
-              "away_raw": 90.0,
+              "home": "94",
+              "away": "104",
+              "home_raw": 94.0,
+              "away_raw": 104.0,
               "winner": "away"
             },
             {
               "key": "AST",
-              "home": "45",
-              "away": "38",
-              "home_raw": 45.0,
-              "away_raw": 38.0,
+              "home": "57",
+              "away": "47",
+              "home_raw": 57.0,
+              "away_raw": 47.0,
               "winner": "home"
             },
             {
               "key": "STL",
-              "home": "9",
-              "away": "15",
-              "home_raw": 9.0,
-              "away_raw": 15.0,
+              "home": "13",
+              "away": "18",
+              "home_raw": 13.0,
+              "away_raw": 18.0,
               "winner": "away"
             },
             {
               "key": "BLK",
-              "home": "11",
+              "home": "12",
               "away": "11",
-              "home_raw": 11.0,
+              "home_raw": 12.0,
               "away_raw": 11.0,
-              "winner": "tie"
+              "winner": "home"
             },
             {
               "key": "TO",
-              "home": "35",
-              "away": "33",
-              "home_raw": 35.0,
-              "away_raw": 33.0,
+              "home": "40",
+              "away": "39",
+              "home_raw": 40.0,
+              "away_raw": 39.0,
               "winner": "away"
             }
           ]
@@ -1979,90 +1979,90 @@
             "team_id": 4,
             "name": "African Camp",
             "abbrev": "ACA",
-            "wins": 3,
-            "losses": 6,
+            "wins": 4,
+            "losses": 5,
             "ties": 0
           },
           "away": {
             "team_id": 12,
             "name": "EV’s Supertuskers",
             "abbrev": "LJ6",
-            "wins": 6,
-            "losses": 3,
+            "wins": 5,
+            "losses": 4,
             "ties": 0
           },
           "winner": null,
           "cats": [
             {
               "key": "FG%",
-              "home": ".452",
-              "away": ".494",
-              "home_raw": 0.4516129,
-              "away_raw": 0.49367089,
-              "winner": "away"
+              "home": ".506",
+              "away": ".505",
+              "home_raw": 0.5059761,
+              "away_raw": 0.50510204,
+              "winner": "home"
             },
             {
               "key": "FT%",
-              "home": ".790",
-              "away": ".852",
-              "home_raw": 0.79032258,
-              "away_raw": 0.85185185,
+              "home": ".764",
+              "away": ".844",
+              "home_raw": 0.76388889,
+              "away_raw": 0.84415584,
               "winner": "away"
             },
             {
               "key": "3PM",
-              "home": "32",
-              "away": "22",
-              "home_raw": 32.0,
-              "away_raw": 22.0,
+              "home": "45",
+              "away": "27",
+              "home_raw": 45.0,
+              "away_raw": 27.0,
               "winner": "home"
             },
             {
               "key": "PTS",
-              "home": "249",
-              "away": "224",
-              "home_raw": 249.0,
-              "away_raw": 224.0,
+              "home": "354",
+              "away": "290",
+              "home_raw": 354.0,
+              "away_raw": 290.0,
               "winner": "home"
             },
             {
               "key": "REB",
-              "home": "60",
-              "away": "91",
-              "home_raw": 60.0,
-              "away_raw": 91.0,
+              "home": "92",
+              "away": "103",
+              "home_raw": 92.0,
+              "away_raw": 103.0,
               "winner": "away"
             },
             {
               "key": "AST",
-              "home": "60",
-              "away": "67",
-              "home_raw": 60.0,
-              "away_raw": 67.0,
+              "home": "79",
+              "away": "82",
+              "home_raw": 79.0,
+              "away_raw": 82.0,
               "winner": "away"
             },
             {
               "key": "STL",
-              "home": "14",
-              "away": "7",
-              "home_raw": 14.0,
-              "away_raw": 7.0,
+              "home": "21",
+              "away": "10",
+              "home_raw": 21.0,
+              "away_raw": 10.0,
               "winner": "home"
             },
             {
               "key": "BLK",
-              "home": "7",
-              "away": "11",
-              "home_raw": 7.0,
-              "away_raw": 11.0,
+              "home": "9",
+              "away": "15",
+              "home_raw": 9.0,
+              "away_raw": 15.0,
               "winner": "away"
             },
             {
               "key": "TO",
-              "home": "33",
-              "away": "26",
-              "home_raw": 33.0,
-              "away_raw": 26.0,
+              "home": "43",
+              "away": "31",
+              "home_raw": 43.0,
+              "away_raw": 31.0,
               "winner": "away"
             }
           ]
@@ -2075,90 +2075,90 @@
             "team_id": 8,
             "name": "ChopLand",
             "abbrev": "CHOP",
-            "wins": 2,
-            "losses": 7,
+            "wins": 0,
+            "losses": 9,
             "ties": 0
           },
           "away": {
             "team_id": 1,
             "name": "Far East Dynasty",
             "abbrev": "FED",
-            "wins": 7,
-            "losses": 2,
+            "wins": 9,
+            "losses": 0,
             "ties": 0
           },
           "winner": null,
           "cats": [
             {
               "key": "FG%",
-              "home": ".457",
-              "away": ".485",
-              "home_raw": 0.45698925,
-              "away_raw": 0.485,
+              "home": ".464",
+              "away": ".479",
+              "home_raw": 0.46363636,
+              "away_raw": 0.47916667,
               "winner": "away"
             },
             {
               "key": "FT%",
-              "home": ".750",
-              "away": ".741",
-              "home_raw": 0.75,
-              "away_raw": 0.74074074,
-              "winner": "home"
+              "home": ".746",
+              "away": ".769",
+              "home_raw": 0.74576271,
+              "away_raw": 0.76923077,
+              "winner": "away"
             },
             {
               "key": "3PM",
-              "home": "29",
-              "away": "28",
-              "home_raw": 29.0,
-              "away_raw": 28.0,
-              "winner": "home"
+              "home": "32",
+              "away": "34",
+              "home_raw": 32.0,
+              "away_raw": 34.0,
+              "winner": "away"
             },
             {
               "key": "PTS",
-              "home": "241",
-              "away": "262",
-              "home_raw": 241.0,
-              "away_raw": 262.0,
+              "home": "280",
+              "away": "314",
+              "home_raw": 280.0,
+              "away_raw": 314.0,
               "winner": "away"
             },
             {
               "key": "REB",
-              "home": "67",
-              "away": "84",
-              "home_raw": 67.0,
-              "away_raw": 84.0,
+              "home": "86",
+              "away": "107",
+              "home_raw": 86.0,
+              "away_raw": 107.0,
               "winner": "away"
             },
             {
               "key": "AST",
-              "home": "52",
-              "away": "63",
-              "home_raw": 52.0,
-              "away_raw": 63.0,
+              "home": "65",
+              "away": "75",
+              "home_raw": 65.0,
+              "away_raw": 75.0,
               "winner": "away"
             },
             {
               "key": "STL",
-              "home": "12",
-              "away": "15",
-              "home_raw": 12.0,
-              "away_raw": 15.0,
+              "home": "18",
+              "away": "22",
+              "home_raw": 18.0,
+              "away_raw": 22.0,
               "winner": "away"
             },
             {
               "key": "BLK",
-              "home": "6",
-              "away": "14",
-              "home_raw": 6.0,
-              "away_raw": 14.0,
+              "home": "11",
+              "away": "16",
+              "home_raw": 11.0,
+              "away_raw": 16.0,
               "winner": "away"
             },
             {
               "key": "TO",
-              "home": "32",
-              "away": "28",
-              "home_raw": 32.0,
-              "away_raw": 28.0,
+              "home": "38",
+              "away": "33",
+              "home_raw": 38.0,
+              "away_raw": 33.0,
               "winner": "away"
             }
           ]
@@ -2187,74 +2187,74 @@
           "cats": [
             {
               "key": "FG%",
-              "home": ".527",
-              "away": ".460",
-              "home_raw": 0.52659574,
-              "away_raw": 0.45959596,
+              "home": ".530",
+              "away": ".465",
+              "home_raw": 0.52995392,
+              "away_raw": 0.46543779,
               "winner": "home"
             },
             {
               "key": "FT%",
-              "home": ".867",
-              "away": ".778",
-              "home_raw": 0.86666667,
-              "away_raw": 0.77777778,
+              "home": ".857",
+              "away": ".776",
+              "home_raw": 0.85714286,
+              "away_raw": 0.7755102,
               "winner": "home"
             },
             {
               "key": "3PM",
-              "home": "29",
+              "home": "40",
               "away": "23",
-              "home_raw": 29.0,
+              "home_raw": 40.0,
               "away_raw": 23.0,
               "winner": "home"
             },
             {
               "key": "PTS",
-              "home": "266",
-              "away": "240",
-              "home_raw": 266.0,
-              "away_raw": 240.0,
+              "home": "312",
+              "away": "263",
+              "home_raw": 312.0,
+              "away_raw": 263.0,
               "winner": "home"
             },
             {
               "key": "REB",
-              "home": "83",
-              "away": "100",
-              "home_raw": 83.0,
-              "away_raw": 100.0,
+              "home": "91",
+              "away": "122",
+              "home_raw": 91.0,
+              "away_raw": 122.0,
               "winner": "away"
             },
             {
               "key": "AST",
-              "home": "50",
-              "away": "49",
-              "home_raw": 50.0,
-              "away_raw": 49.0,
+              "home": "64",
+              "away": "54",
+              "home_raw": 64.0,
+              "away_raw": 54.0,
               "winner": "home"
             },
             {
               "key": "STL",
-              "home": "11",
+              "home": "13",
               "away": "16",
-              "home_raw": 11.0,
+              "home_raw": 13.0,
               "away_raw": 16.0,
               "winner": "away"
             },
             {
               "key": "BLK",
-              "home": "21",
-              "away": "16",
-              "home_raw": 21.0,
-              "away_raw": 16.0,
+              "home": "23",
+              "away": "18",
+              "home_raw": 23.0,
+              "away_raw": 18.0,
               "winner": "home"
             },
             {
               "key": "TO",
-              "home": "27",
-              "away": "24",
-              "home_raw": 27.0,
-              "away_raw": 24.0,
+              "home": "35",
+              "away": "31",
+              "home_raw": 35.0,
+              "away_raw": 31.0,
               "winner": "away"
             }
           ]
@@ -2267,90 +2267,90 @@
             "team_id": 10,
             "name": "MogTeam",
             "abbrev": "MOG",
-            "wins": 5,
+            "wins": 6,
             "losses": 3,
-            "ties": 1
+            "ties": 0
           },
           "away": {
             "team_id": 6,
             "name": "Xz Cho's Exquisite Team",
             "abbrev": "XET",
             "wins": 3,
-            "losses": 5,
-            "ties": 1
+            "losses": 6,
+            "ties": 0
           },
           "winner": null,
           "cats": [
             {
               "key": "FG%",
-              "home": ".477",
-              "away": ".464",
-              "home_raw": 0.47692308,
-              "away_raw": 0.4640884,
+              "home": ".469",
+              "away": ".465",
+              "home_raw": 0.46889952,
+              "away_raw": 0.46478873,
               "winner": "home"
             },
             {
               "key": "FT%",
               "home": ".900",
-              "away": ".862",
+              "away": ".848",
               "home_raw": 0.9,
-              "away_raw": 0.86170213,
+              "away_raw": 0.84761905,
               "winner": "home"
             },
             {
               "key": "3PM",
-              "home": "30",
+              "home": "33",
               "away": "31",
-              "home_raw": 30.0,
+              "home_raw": 33.0,
               "away_raw": 31.0,
-              "winner": "away"
+              "winner": "home"
             },
             {
               "key": "PTS",
-              "home": "270",
-              "away": "280",
-              "home_raw": 270.0,
-              "away_raw": 280.0,
+              "home": "283",
+              "away": "318",
+              "home_raw": 283.0,
+              "away_raw": 318.0,
               "winner": "away"
             },
             {
               "key": "REB",
-              "home": "101",
-              "away": "70",
-              "home_raw": 101.0,
-              "away_raw": 70.0,
+              "home": "104",
+              "away": "80",
+              "home_raw": 104.0,
+              "away_raw": 80.0,
               "winner": "home"
             },
             {
               "key": "AST",
-              "home": "63",
-              "away": "52",
-              "home_raw": 63.0,
-              "away_raw": 52.0,
+              "home": "64",
+              "away": "57",
+              "home_raw": 64.0,
+              "away_raw": 57.0,
               "winner": "home"
             },
             {
               "key": "STL",
-              "home": "15",
-              "away": "19",
-              "home_raw": 15.0,
-              "away_raw": 19.0,
+              "home": "16",
+              "away": "22",
+              "home_raw": 16.0,
+              "away_raw": 22.0,
               "winner": "away"
             },
             {
               "key": "BLK",
               "home": "6",
-              "away": "6",
+              "away": "8",
               "home_raw": 6.0,
-              "away_raw": 6.0,
-              "winner": "tie"
+              "away_raw": 8.0,
+              "winner": "away"
             },
             {
               "key": "TO",
-              "home": "16",
-              "away": "34",
-              "home_raw": 16.0,
-              "away_raw": 34.0,
+              "home": "17",
+              "away": "41",
+              "home_raw": 17.0,
+              "away_raw": 41.0,
               "winner": "home"
             }
           ]
