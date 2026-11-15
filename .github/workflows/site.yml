@@ -1,4 +1,4 @@
-﻿name: Обновление данных и публикация сайта
+name: Обновление данных и публикация сайта
 
 on:
   push:
@@ -20,9 +20,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # Всегда свежий main: повторный запуск старого workflow иначе взял бы старую версию
+      # репозитория и не смог бы запушить данные.
+      - uses: actions/checkout@v7
+        with:
+          ref: main
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -48,13 +52,16 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "Обновление данных лиги"
-            git push
+            # Если пока шла выгрузка, в main что-то запушили, встаём поверх этих изменений.
+            # При конфликте в data/ побеждают только что выгруженные данные.
+            git pull --rebase -X theirs origin main
+            git push origin HEAD:main
           fi
 
       - name: Сборка сайта
         run: python scripts/build.py
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -66,4 +73,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
