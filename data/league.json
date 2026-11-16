@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-15T09:39:15Z",
+  "updated_at": "2026-11-16T10:33:54Z",
   "name": "Bird Rights Keeper League",
   "espn_name": "Bird Rights",
   "season": 2027,
   "season_label": "2026-27",
   "phase": "regular",
-  "current_period": 4,
+  "current_period": 5,
   "regular_periods": 16,
   "playoff_spots": 8,
   "team_count": 12,
