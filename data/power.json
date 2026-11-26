@@ -2762,13 +2762,13 @@
           "name": "LeBron's Loud Team",
           "abbrev": "LLT",
           "manager": "LeBron Sucks",
-          "rating": 67.8,
-          "form": 72.1,
-          "season": 60.8,
+          "rating": 67.9,
+          "form": 72.3,
+          "season": 60.9,
           "result": 62.2,
-          "week": 70.7,
-          "expected": "27.0-17.3-0.7",
-          "expected_pct": 60.8,
+          "week": 71.2,
+          "expected": "27.1-17.3-0.6",
+          "expected_pct": 60.9,
           "actual": "28-17-0",
           "luck": 0.6,
           "cat_ranks": [
@@ -2818,15 +2818,15 @@
           "name": "Lyubasik Titan's",
           "abbrev": "LT",
           "manager": "Roman",
-          "rating": 60.6,
-          "form": 59.0,
-          "season": 61.6,
+          "rating": 60.8,
+          "form": 59.3,
+          "season": 61.7,
           "result": 65.6,
-          "week": 53.0,
-          "expected": "27.3-16.8-0.9",
-          "expected_pct": 61.6,
+          "week": 53.5,
+          "expected": "27.4-16.8-0.8",
+          "expected_pct": 61.7,
           "actual": "29-15-1",
-          "luck": 1.8,
+          "luck": 1.7,
           "cat_ranks": [
             {
               "key": "FG%",
@@ -2874,15 +2874,15 @@
           "name": "Xz Cho's Exquisite Team",
           "abbrev": "XET",
           "manager": "Nikita",
-          "rating": 59.8,
-          "form": 60.0,
-          "season": 57.7,
+          "rating": 59.6,
+          "form": 59.8,
+          "season": 57.6,
           "result": 62.2,
-          "week": 71.7,
-          "expected": "25.5-18.5-1.0",
-          "expected_pct": 57.7,
+          "week": 71.2,
+          "expected": "25.5-18.6-0.9",
+          "expected_pct": 57.6,
           "actual": "28-17-0",
-          "luck": 2.0,
+          "luck": 2.1,
           "cat_ranks": [
             {
               "key": "FG%",
@@ -2986,15 +2986,15 @@
           "name": "ChopLand",
           "abbrev": "CHOP",
           "manager": "Chop",
-          "rating": 53.7,
-          "form": 57.2,
-          "season": 48.0,
+          "rating": 53.5,
+          "form": 57.0,
+          "season": 47.9,
           "result": 48.9,
-          "week": 66.7,
-          "expected": "21.0-22.8-1.2",
-          "expected_pct": 48.0,
+          "week": 66.2,
+          "expected": "21.0-22.9-1.1",
+          "expected_pct": 47.9,
           "actual": "21-22-2",
-          "luck": 0.4,
+          "luck": 0.5,
           "cat_ranks": [
             {
               "key": "FG%",
@@ -3026,7 +3026,7 @@
             },
             {
               "key": "BLK",
-              "rank": 5
+              "rank": 6
             },
             {
               "key": "TO",
@@ -3082,7 +3082,7 @@
             },
             {
               "key": "BLK",
-              "rank": 1
+              "rank": 2
             },
             {
               "key": "TO",
@@ -3523,9 +3523,9 @@
         },
         "home_exp": 4.7,
         "away_exp": 4.3,
-        "home_win": 56,
+        "home_win": 55,
         "tie": 0,
-        "away_win": 44,
+        "away_win": 45,
         "cats": [
           {
             "key": "FG%",
@@ -3571,8 +3571,8 @@
           },
           {
             "key": "BLK",
-            "home_pct": 74,
-            "home": "23",
+            "home_pct": 73,
+            "home": "22",
             "away": "18"
           },
           {
@@ -3796,7 +3796,7 @@
           },
           {
             "key": "TO",
-            "home_pct": 6,
+            "home_pct": 5,
             "home": "81",
             "away": "58"
           }
@@ -3863,7 +3863,7 @@
           },
           {
             "key": "BLK",
-            "home_pct": 86,
+            "home_pct": 87,
             "home": "22",
             "away": "14"
           },
@@ -3882,7 +3882,7 @@
       "rank": 1,
       "team_id": 11,
       "name": "LeBron's Loud Team",
-      "played": 46.1,
+      "played": 46.0,
       "played_n": 5,
       "ahead": 48.4,
       "ahead_n": 11,
@@ -3959,7 +3959,7 @@
       "rank": 8,
       "team_id": 7,
       "name": "ZeeBo Grit'n'Grind",
-      "played": 50.8,
+      "played": 50.9,
       "played_n": 5,
       "ahead": 50.4,
       "ahead_n": 11,
@@ -3992,7 +3992,7 @@
       "rank": 11,
       "team_id": 2,
       "name": "Wiener Wurtschen",
-      "played": 53.0,
+      "played": 52.9,
       "played_n": 5,
       "ahead": 51.3,
       "ahead_n": 11,
@@ -4114,7 +4114,7 @@
           "key": "REB",
           "value": "181",
           "raw": 181.3333,
-          "z": 0.0
+          "z": -0.0
         },
         {
           "key": "AST",
@@ -4132,7 +4132,7 @@
           "key": "BLK",
           "value": "22",
           "raw": 22.4333,
-          "z": 0.51
+          "z": 0.52
         },
         {
           "key": "TO",
@@ -4182,8 +4182,8 @@
         {
           "key": "REB",
           "value": "190",
-          "raw": 189.5,
-          "z": 0.41
+          "raw": 189.7,
+          "z": 0.42
         },
         {
           "key": "AST",
@@ -4201,13 +4201,13 @@
           "key": "BLK",
           "value": "22",
           "raw": 21.5667,
-          "z": 0.31
+          "z": 0.32
         },
         {
           "key": "TO",
           "value": "82",
-          "raw": 81.5,
-          "z": -1.71
+          "raw": 81.7,
+          "z": -1.73
         }
       ],
       "strong": [
@@ -4252,7 +4252,7 @@
           "key": "REB",
           "value": "207",
           "raw": 206.9,
-          "z": 1.29
+          "z": 1.28
         },
         {
           "key": "AST",
@@ -4276,7 +4276,7 @@
           "key": "TO",
           "value": "70",
           "raw": 70.5,
-          "z": -0.38
+          "z": -0.37
         }
       ],
       "strong": [
@@ -4318,8 +4318,8 @@
         {
           "key": "REB",
           "value": "205",
-          "raw": 205.2333,
-          "z": 1.2
+          "raw": 205.4333,
+          "z": 1.21
         },
         {
           "key": "AST",
@@ -4336,14 +4336,14 @@
         {
           "key": "BLK",
           "value": "21",
-          "raw": 21.3,
-          "z": 0.25
+          "raw": 21.1,
+          "z": 0.21
         },
         {
           "key": "TO",
           "value": "70",
           "raw": 70.5,
-          "z": -0.38
+          "z": -0.37
         }
       ],
       "strong": [
@@ -4406,7 +4406,7 @@
           "key": "BLK",
           "value": "25",
           "raw": 24.9,
-          "z": 1.09
+          "z": 1.1
         },
         {
           "key": "TO",
@@ -4729,9 +4729,9 @@
         },
         {
           "key": "REB",
-          "value": "186",
-          "raw": 186.3333,
-          "z": 0.25
+          "value": "187",
+          "raw": 186.5333,
+          "z": 0.26
         },
         {
           "key": "AST",
@@ -4755,7 +4755,7 @@
           "key": "TO",
           "value": "71",
           "raw": 71.3333,
-          "z": -0.48
+          "z": -0.47
         }
       ],
       "strong": [],
@@ -4906,7 +4906,7 @@
         {
           "period_id": 5,
           "label": "Матчап 5",
-          "rating": 67.8,
+          "rating": 67.9,
           "rank": 1
         }
       ]
@@ -4943,7 +4943,7 @@
         {
           "period_id": 5,
           "label": "Матчап 5",
-          "rating": 60.6,
+          "rating": 60.8,
           "rank": 2
         }
       ]
@@ -4980,7 +4980,7 @@
         {
           "period_id": 5,
           "label": "Матчап 5",
-          "rating": 59.8,
+          "rating": 59.6,
           "rank": 3
         }
       ]
@@ -5054,7 +5054,7 @@
         {
           "period_id": 5,
           "label": "Матчап 5",
-          "rating": 53.7,
+          "rating": 53.5,
           "rank": 5
         }
       ]
